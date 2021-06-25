@@ -32,8 +32,6 @@ header {
 }
 .header-shape {
   position: absolute;
-  left: 35.3%;
-  top: 31px;
   z-index: 1;
 }
 .header-model {
