@@ -1,4 +1,647 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 1920px;
+  width: 100%;
+}
+
+/* =====================HEADER=================== */
+
+header {
+  position: relative;
+  max-width: 1920px;
+  width: 100%;
+  height: 1000px;
+  background-image: url("../images/header/header-bg_color.png");
+}
+
+.logo {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 80px;
+  padding: 0 100px;
+  z-index: 1;
+}
+
+.logo img {
+  margin-top: 27px;
+}
+
+.logo span {
+  float: right;
+  margin-left: 44px;
+  margin-top: 50px;
+  color: white;
+  margin-right: 13px;
+}
+
+.header-shape {
+  position: absolute;
+  // left: 35.3%;
+  // top: 31px;
+  z-index: 1;
+}
+
+.header-model {
+  position: absolute;
+  z-index: 3;
+  right: 115px;
+  height: 100%;
+  width: 49.5%;
+}
+
+.header-title {
+  position: absolute;
+  box-sizing: border-box;
+  width: 75%;
+  height: 365px;
+  z-index: 4;
+  right: 100px;
+  top: 340px;
+}
+
+.header-title p {
+  margin: 0;
+}
+
+.header-title__first-line {
+  font-size: 24px;
+  letter-spacing: 13px;
+  line-height: 32px;
+  color: #696969;
+  font-family: "Fira Sans";
+  height: 20%;
+}
+
+.header-title__second-line {
+  height: 68%;
+  width: 100%;
+}
+
+.header-title__second-line-left {
+  width: 90%;
+  height: 100%;
+  font-size: 100px;
+  letter-spacing: 27px;
+  line-height: 100px;
+  color: #333;
+  font-weight: 500;
+  font-style: italic;
+  font-family: "Cormorant Garamond";
+  text-transform: uppercase;
+  float: left;
+}
+
+.header-title__second-line-right {
+  width: 10%;
+  float: right;
+  height: 100%;
+}
+
+.header-title__second-line-right div {
+  margin-top: 10px;
+}
+
+.header-title__second-line-right p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 40px;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Cormorant Garamond";
+  text-align: right;
+}
+
+.header-title__button {
+  width: 100%;
+  height: 12%;
+}
+
+.header-title__button > button {
+  width: 197px;
+  height: 48px;
+  background-color: #333333;
+  font-size: 16px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1920px;
+  width: 100%;
+  padding: 15px 0;
+}
+
+.contact__items {
+  width: 20%;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.contact__items > p {
+  font-size: 18px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  margin: 0;
+}
+
+.contact__items > span {
+  font-size: 16px;
+  line-height: 28px;
+  color: #ababab;
+  font-weight: 400;
+  font-family: "Fira Sans";
+}
+
+/* =====================BANNER=================== */
+
+.banner {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 100px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.banner__title,
+.banner__content {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.banner__content {
+  margin-top: 28px;
+}
+
+.banner__title {
+  box-sizing: border-box;
+  height: 290px;
+  padding: 105px 0;
+}
+
+.banner__title p {
+  width: 868px;
+  height: 90px;
+  word-break: break-all;
+  font-size: 34px;
+  line-height: 48px;
+  color: #333333;
+  font-weight: 600;
+  margin: 0 auto;
+  font-family: "Cormorant Garamond";
+}
+
+.banner__content-first-content,
+.banner__content-second-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 520px;
+  margin-bottom: 55px;
+}
+
+.banner-pictures {
+  width: 100%;
+  height: 100%;
+}
+
+// first
+.banner__content-first-content-left {
+  width: 22.9%;
+  height: 100%;
+}
+
+.banner__content-first-content-center {
+  width: 54.2%;
+  box-sizing: border-box;
+  padding: 0px 55px;
+  height: 100%;
+}
+
+.banner__content-first-content-right {
+  width: 22.9%;
+  height: 100%;
+}
+
+// second
+.banner__content-second-content-left,
+.banner__content-second-content-center {
+  box-sizing: border-box;
+  width: 26%;
+  padding-right: 55px;
+  height: 100%;
+}
+
+.banner__content-second-content-right {
+  width: 48%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+/* =====================CONTAINER=================== */
+
+.container {
+  max-width: 1200px;
+  height: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+
+.container__title {
+  width: 100%;
+  height: 120px;
+  padding: 80px 15px;
+  box-sizing: border-box;
+}
+
+.container__title-feature {
+  width: 80%;
+}
+
+.container__title-feature p {
+  margin: 0;
+  font-size: 56px;
+  line-height: 28px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+
+.container__title-view {
+  width: 20%;
+  text-align: right;
+}
+
+.container__title-view span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 61px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  margin-right: 9px;
+}
+
+.container__content {
+  width: 100%;
+  height: 414px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.container__content-items {
+  width: 25%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-top: 30px;
+}
+
+.container__content-items-image {
+  width: 100%;
+  height: 80%;
+}
+
+#bg-img {
+  background: url("../images/container/t-ring-2.png") no-repeat 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#bg-img-2 {
+  background: url("../images/container/b-ring.png") no-repeat 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.container__content-items-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.container__content-items-price {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+}
+
+.container__content-items-price p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: #333333;
+  font-weight: 600;
+  font-family: "Fira Sans";
+}
+
+.container__content-items-price span {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: #d6ba8d;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+
+/* =====================BLOG=================== */
+
+.blog {
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 100px;
+  height: 700px;
+  box-sizing: border-box;
+  background-color: #faf9f9;
+  margin-bottom: 45px;
+}
+
+.blog__title {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.blog__title span {
+  font-size: 56px;
+  line-height: 28px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  position: absolute;
+  top: -15px;
+  right: 41%;
+}
+
+.blog__content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  height: 490px;
+  box-sizing: border-box;
+}
+
+.blog__content-items {
+  box-sizing: border-box;
+  width: 33.33%;
+  padding: 0 15px;
+}
+
+.blog__content-items-image {
+  height: 44.5%;
+  width: 100%;
+}
+
+#blog-1 {
+  background: url("../images/blog/blog_1.png") no-repeat 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#blog-2 {
+  background: url("../images/blog/blog_2.png") no-repeat 50%;
+  width: 100%;
+  height: 100%;
+}
+
+#blog-3 {
+  background: url("../images/blog/blog_3.png") no-repeat 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.blog__content-items-label {
+  height: 55.5%;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px 35px;
+}
+
+.date {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #cccccc;
+  font-weight: 400;
+  font-family: "Fira Sans";
+}
+
+.title {
+  width: 298px;
+  height: 100px;
+  font-size: 22.5px;
+  letter-spacing: 1px;
+  line-height: 30px;
+  color: #333333;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Cormorant Garamond";
+}
+
+.interactive span {
+  font-size: 15px;
+  line-height: 32px;
+  color: #696969;
+  font-weight: 400;
+  font-family: "Fira Sans";
+  margin-right: 10px;
+}
+
+.blog__content-button {
+  margin-top: 35px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+}
+
+/* =====================BRAND=================== */
+
+.brand {
+  max-width: 1200px;
+  width: 100%;
+  height: 190px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.brand__items {
+  width: 16.65%;
+  height: 45%;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 91px;
+}
+
+.brand__items img {
+  position: absolute;
+  bottom: 10px;
+}
+
+#elle {
+  bottom: 17px;
+}
+
+#rolex,
+#diamond {
+  bottom: 21px;
+}
+
+/* =====================FOOTER=================== */
+
+footer {
+  max-width: 1920px;
+  width: 100%;
+  height: 420px;
+  background-color: #333333;
+  margin-top: 35px;
+}
+
+.footer__content {
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 55px 15px 90px 15px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.footer__content-top {
+  width: 100%;
+  height: 75%;
+  border-bottom: 1px inset #333;
+}
+
+.footer__content-bottom {
+  width: 100%;
+  height: 25%;
+  margin-top: 20px;
+}
+
+.footer__content-top-logo {
+  width: 20%;
+  height: 80%;
+}
+
+.footer__content-top-logo img {
+  width: 77.5%;
+  height: 70%;
+  margin-top: 9px;
+}
+
+.footer__content-top-menu {
+  width: 60%;
+  height: 100%;
+}
+
+.footer__content-top-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  :first-child {
+    color: #d6ba8d;
+  }
+  justify-content: center;
+}
+
+.footer__content-top-menu ul li {
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: whitesmoke;
+  font-weight: 700;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  margin-top: 85px;
+  padding: 15px;
+}
+
+.footer__content-top-sub {
+  width: 20%;
+}
+
+.footer__content-top-sub__content {
+  float: right;
+  width: 68%;
+  height: 17.5%;
+  text-align: center;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 3px 15px;
+  margin-top: 94px;
+}
+
+.footer__content-top-sub__content span {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  color: #ababab;
+  font-weight: 700;
+  font-family: "Fira Sans";
+}
+
+.footer__content-bottom-address {
+  width: 80%;
+  color: #696969;
+}
+
+.footer__content-bottom-address p {
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Fira Sans";
+  margin: 14px 0 7px 0;
+}
+
+.footer__content-bottom-social-media {
+  width: 20%;
+}
+
+.footer__content-bottom-social-media ul {
+  padding-left: 5px;
+  list-style-type: none;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer__content-bottom-social-media ul li {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid white;
+  margin-left: 8px;
+  color: white;
 }
