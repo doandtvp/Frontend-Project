@@ -4,13 +4,13 @@ body {
   max-width: 1920px;
   width: 100%;
 }
-/* =====================HEADER=================== */
 header {
   position: relative;
   max-width: 1920px;
   width: 100%;
   height: 1000px;
-  background-image: url("../images/header/header-bg_color.png");
+  background: url("../images/header/header-model.png") no-repeat 87%, url("../images/header/header-shape.png") no-repeat 149% 100%, url("../images/header/header-bg_color.png") no-repeat;
+  background-size: 48.5% 100%, auto, auto;
 }
 .logo {
   position: absolute;
@@ -25,10 +25,26 @@ header {
 }
 .logo span {
   float: right;
-  margin-left: 44px;
-  margin-top: 50px;
   color: white;
-  margin-right: 13px;
+  width: 20px;
+  height: 15px;
+  margin: 45px 6px 0 44px;
+}
+#cart {
+  position: relative;
+}
+#notice {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  font-size: 9px;
+  padding: 3px;
+  text-align: center;
+  top: -9px;
+  right: -9px;
+  color: black;
+  background-color: white;
 }
 .header-shape {
   position: absolute;
@@ -38,7 +54,8 @@ header {
   position: absolute;
   z-index: 3;
   right: 115px;
-  height: 100%;
+  max-height: 100%;
+  height: auto;
   width: 49.5%;
 }
 .header-title {
@@ -55,61 +72,61 @@ header {
 }
 .header-title__first-line {
   font-size: 24px;
-  letter-spacing: 13px;
+  letter-spacing: 12px;
   line-height: 32px;
   color: #696969;
-  font-family: "Fira Sans";
-  height: 20%;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  height: 18%;
 }
 .header-title__second-line {
-  height: 68%;
+  height: 70%;
   width: 100%;
 }
 .header-title__second-line-left {
   width: 90%;
   height: 100%;
   font-size: 100px;
-  letter-spacing: 27px;
+  letter-spacing: 30px;
   line-height: 100px;
-  color: #333;
-  font-weight: 500;
+  color: #333333;
+  font-weight: 600;
   font-style: italic;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
   float: left;
 }
 .header-title__second-line-right {
   width: 10%;
+  height: 95%;
   float: right;
-  height: 100%;
-}
-.header-title__second-line-right div {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .header-title__second-line-right p {
   font-size: 24px;
-  letter-spacing: 2px;
+  letter-spacing: 2.4px;
   line-height: 40px;
   color: #fff;
   font-weight: 500;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
   text-align: right;
 }
 .header-title__button {
   width: 100%;
   height: 12%;
 }
-.header-title__button > button {
-  width: 197px;
+.header-title__button > div {
+  width: 190px;
   height: 48px;
   background-color: #333333;
   font-size: 16px;
-  letter-spacing: 2px;
-  line-height: 24px;
+  letter-spacing: 2.3px;
+  line-height: 50px;
   color: #ffffff;
   font-weight: 700;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
+  text-indent: 25px;
 }
 .contact {
   display: flex;
@@ -121,7 +138,7 @@ header {
 .contact__items {
   width: 20%;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 2px;
 }
 .contact__items > p {
   font-size: 18px;
@@ -129,7 +146,7 @@ header {
   line-height: 30px;
   color: #333333;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
   margin: 0;
 }
 .contact__items > span {
@@ -137,7 +154,7 @@ header {
   line-height: 28px;
   color: #ababab;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
 }
 .banner {
   max-width: 1920px;
@@ -159,17 +176,14 @@ header {
   box-sizing: border-box;
   height: 290px;
   padding: 105px 0;
+  text-align: center;
 }
-.banner__title p {
-  width: 868px;
-  height: 90px;
-  word-break: break-all;
-  font-size: 34px;
+.banner__title span {
+  font-size: 33.5px;
   line-height: 48px;
   color: #333333;
   font-weight: 600;
-  margin: 0 auto;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
 }
 .banner__content-first-content,
 .banner__content-second-content {
@@ -188,10 +202,67 @@ header {
   height: 100%;
 }
 .banner__content-first-content-center {
-  width: 54.2%;
-  box-sizing: border-box;
-  padding: 0px 55px;
+  position: relative;
+  width: 48.2%;
   height: 100%;
+  background: url("../images/banner/sale-box.png") no-repeat 93.5% 50%, url(../images/banner/girl.png) no-repeat 42.5% 37%;
+  margin: auto;
+}
+.sale-box {
+  position: absolute;
+  width: 275px;
+  height: 64.5%;
+  top: 17%;
+  right: 4%;
+  border-top: 5px solid white;
+  border-right: 5px solid white;
+}
+#text_1 {
+  width: 100%;
+  height: 26px;
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  margin-top: 39px;
+  padding-left: 2.5px;
+}
+#text_2 {
+  width: 100%;
+  font-size: 100px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  margin-top: 51px;
+}
+#text_3 {
+  width: 100%;
+  height: 26px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #696969;
+  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  text-align: center;
+  margin-top: 64px;
+}
+#text_4 {
+  width: 100%;
+  height: 26px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  color: #696969;
+  font-weight: 700;
+  font-family: "Fira Sans", sans-serif;
+  text-align: center;
+  margin-top: 61px;
+  padding-left: 1px;
 }
 .banner__content-first-content-right {
   width: 22.9%;
@@ -200,26 +271,28 @@ header {
 .banner__content-second-content-left,
 .banner__content-second-content-center {
   box-sizing: border-box;
-  width: 26%;
-  padding-right: 55px;
+  width: 22.9%;
   height: 100%;
 }
+.banner__content-second-content-center {
+  margin: auto;
+}
 .banner__content-second-content-right {
-  width: 48%;
+  width: 48.4%;
   box-sizing: border-box;
   height: 100%;
 }
 .container {
   max-width: 1200px;
-  height: 1000px;
+  min-height: 1000px;
+  height: auto;
   width: 100%;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 77px auto;
 }
 .container__title {
   width: 100%;
-  height: 120px;
-  padding: 80px 15px;
+  height: auto;
+  padding: 60px 15px 0 15px;
   box-sizing: border-box;
 }
 .container__title-feature {
@@ -231,7 +304,7 @@ header {
   line-height: 28px;
   color: #333333;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
 }
 .container__title-view {
   width: 20%;
@@ -239,47 +312,118 @@ header {
 }
 .container__title-view span {
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 2.3px;
   line-height: 61px;
   color: #333333;
   font-weight: 700;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
-  margin-right: 9px;
+  margin-right: 13px;
 }
 .container__content {
   width: 100%;
-  height: 414px;
+  height: auto;
+  margin-top: 35px;
 }
 .row {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   height: 100%;
 }
 .container__content-items {
   width: 25%;
-  height: 100%;
+  height: 386px;
   box-sizing: border-box;
-  padding: 0 15px;
-  margin-top: 30px;
+  padding: 15px 15px;
+  margin-bottom: 25px;
 }
 .container__content-items-image {
   width: 100%;
-  height: 80%;
+  height: 89%;
+  position: relative;
+  text-align: center;
 }
-#bg-img {
-  background: url("../images/container/t-ring-2.png") no-repeat 50%;
+.t-ring {
+  background: url("../images/container/t-ring.png") no-repeat 50% 97%;
+}
+.t-neck {
+  background: url("../images/container/t-neck.png") no-repeat 43% 0;
+}
+.t-ring-2 {
+  background: url("../images/container/t-ring-2.png") no-repeat 49%;
+}
+.t-ring-3 {
+  background: url("../images/container/t-ring-3.png") no-repeat 50% 145%;
+}
+.b-ring {
+  background: url("../images/container/b-ring.png") no-repeat 48% 62%;
+}
+.b-ring-2 {
+  background: url("../images/container/b-ring-2.png") no-repeat 54% 67%;
+}
+.b-neck {
+  background: url("../images/container/b-neck.png") no-repeat 100% 90%;
+}
+.b-eardrop {
+  background: url("../images/container/eardrop.png") no-repeat 67% 54%;
+}
+.image-hover {
+  position: absolute;
   width: 100%;
   height: 100%;
+  bottom: 0;
+  display: none;
 }
-#bg-img-2 {
-  background: url("../images/container/b-ring.png") no-repeat 50%;
-  width: 100%;
-  height: 100%;
+.container__content-items-image img:hover + .image-hover {
+  display: block;
 }
-.container__content-items-image img {
+.image-hover__slide,
+.image-hover__shopping {
+  position: absolute;
   width: 100%;
+  box-sizing: border-box;
+}
+.image-hover__slide {
+  height: 10%;
+  padding: 7px 0;
+  top: 41%;
+}
+.image-hover__shopping {
+  display: flex;
+  height: 11%;
+  bottom: 0;
+  font-size: 14px;
+  text-align: center;
+}
+.image-hover__shopping-add {
+  width: 49.9%;
   height: 100%;
+  background-color: #d6ba8d;
+  color: white;
+  font-weight: 600;
+  line-height: 2.5em;
+  margin-right: 0.5px;
+}
+.image-hover__shopping-action {
+  display: flex;
+  width: 50%;
+  line-height: 2.2em;
+}
+.image-hover__action {
+  box-sizing: border-box;
+  width: 33.3%;
+  height: 100%;
+  padding: 4px 5px;
+  color: white;
+  background-color: #333333;
+  margin: 0 0.5px;
+}
+.fa-chevron-left {
+  float: left;
+}
+.fa-chevron-right {
+  float: right;
 }
 .container__content-items-price {
   width: 100%;
@@ -287,21 +431,21 @@ header {
   text-align: center;
 }
 .container__content-items-price p {
-  margin: 0;
+  padding: 16px 0 0 2px;
+  line-height: 2em;
   font-size: 14px;
   letter-spacing: 1px;
-  line-height: 36px;
   color: #333333;
-  font-weight: 600;
-  font-family: "Fira Sans";
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
 }
 .container__content-items-price span {
   font-size: 18px;
   letter-spacing: 1px;
-  line-height: 36px;
   color: #d6ba8d;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
 }
 .blog {
   max-width: 1920px;
@@ -325,10 +469,10 @@ header {
   line-height: 28px;
   color: #333333;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
   position: absolute;
-  top: -15px;
-  right: 41%;
+  top: -11px;
+  right: 42.3%;
 }
 .blog__content {
   max-width: 1200px;
@@ -347,17 +491,17 @@ header {
   width: 100%;
 }
 #blog-1 {
-  background: url("../images/blog/blog_1.png") no-repeat 50%;
+  background: url("../images/blog/blog_1.png") no-repeat 53% 44%;
   width: 100%;
   height: 100%;
 }
 #blog-2 {
-  background: url("../images/blog/blog_2.png") no-repeat 50%;
+  background: url("../images/blog/blog_2.png") no-repeat 50% 61%;
   width: 100%;
   height: 100%;
 }
 #blog-3 {
-  background: url("../images/blog/blog_3.png") no-repeat 50%;
+  background: url("../images/blog/blog_3.png") no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -365,15 +509,15 @@ header {
   height: 55.5%;
   width: 100%;
   box-sizing: border-box;
-  padding: 24px 35px;
+  padding: 25px 35px;
 }
 .date {
   font-size: 14px;
-  letter-spacing: 1px;
+  letter-spacing: 1.3px;
   line-height: 24px;
   color: #cccccc;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
 }
 .title {
   width: 298px;
@@ -384,15 +528,15 @@ header {
   color: #333333;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
 }
 .interactive span {
   font-size: 15px;
   line-height: 32px;
   color: #696969;
   font-weight: 400;
-  font-family: "Fira Sans";
-  margin-right: 10px;
+  font-family: "Fira Sans", sans-serif;
+  margin-right: 26px;
 }
 .blog__content-button {
   margin-top: 35px;
@@ -400,7 +544,7 @@ header {
   line-height: 28px;
   color: #333333;
   font-weight: 400;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", serif;
   text-align: center;
 }
 .brand {
@@ -436,7 +580,7 @@ footer {
   width: 100%;
   height: 420px;
   background-color: #333333;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 .footer__content {
   max-width: 1200px;
@@ -488,10 +632,9 @@ footer {
   line-height: 24px;
   color: whitesmoke;
   font-weight: 700;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
   text-transform: uppercase;
-  margin-top: 85px;
-  padding: 15px;
+  margin: 96px 18px 0 18px;
 }
 .footer__content-top-sub {
   width: 20%;
@@ -499,12 +642,12 @@ footer {
 .footer__content-top-sub__content {
   float: right;
   width: 68%;
-  height: 17.5%;
+  height: 20.5%;
   text-align: center;
   border: 2px solid white;
   box-sizing: border-box;
-  padding: 3px 15px;
-  margin-top: 94px;
+  padding: 6px 0px;
+  margin-top: 88px;
 }
 .footer__content-top-sub__content span {
   font-size: 14px;
@@ -512,7 +655,10 @@ footer {
   line-height: 24px;
   color: #ababab;
   font-weight: 700;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", sans-serif;
+}
+.footer__content-top-sub__content i {
+  margin-left: 7px;
 }
 .footer__content-bottom-address {
   width: 80%;
@@ -522,8 +668,8 @@ footer {
   font-size: 14px;
   line-height: 25px;
   font-weight: 400;
-  font-family: "Fira Sans";
-  margin: 14px 0 7px 0;
+  font-family: "Fira Sans", sans-serif;
+  margin: 12px 0 8px 0;
 }
 .footer__content-bottom-social-media {
   width: 20%;
@@ -536,13 +682,13 @@ footer {
   width: 100%;
 }
 .footer__content-bottom-social-media ul li {
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   box-sizing: border-box;
   padding: 16px;
   text-align: center;
   border: 1px solid white;
-  margin-left: 8px;
+  margin-left: 9px;
   color: white;
 }
