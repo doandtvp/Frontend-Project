@@ -375,7 +375,7 @@ header {
   bottom: 0;
   display: none;
 }
-.container__content-items-image img:hover + .image-hover {
+.container__content-items-image:hover .image-hover {
   display: block;
 }
 .image-hover__slide,
