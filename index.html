@@ -10,14 +10,15 @@
     <link rel="stylesheet/less" type="text/css" href="css/styles.css">
     <script src="js/less.js"></script>
     <script src="https://kit.fontawesome.com/ba409467b3.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
     <title>Bonfire Blog</title>
 </head>
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo" > 
+        <div class="logo" >  
             <img src="./images/header/header-logo.png" />
-            <span><i class="fas fa-bars"></i></span>
+            <span onclick=showHeaderSidebar() class="header_menu"><i class="fas fa-bars"></i></span>
             <span id="cart">
                 <i class="fas fa-shopping-cart"></i>
                 <div id="notice">2</div>
@@ -46,6 +47,26 @@
                     <div>Discover Now</div>
                 </div>
             </div>
+        </div>
+        <div id="header__sidebar-area" class="header__sidebar-area">
+            <div id="header_sidebar-opacity" class="header__sidebar-opacity">
+
+            </div>
+            <div id="header__sidebar" class="header__sidebar">
+                <div class="header__sidebar-label">
+                    <i onclick=hideHeaderSidebar() class="fas fa-times"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="header__sidebar-content">
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div> 
         </div>
     </header>
 
@@ -477,6 +498,30 @@
                 </div>
             </div>
         </div> 
+
+        <div id="footer__sidebar-area" class="footer__sidebar-area">
+            <div id="footer__sidebar" class="footer__sidebar">
+                <div class="footer__sidebar-label">
+                    <div>
+                        <i onclick=hideFooterSidebar() class="fas fa-times"></i>
+                    </div> 
+                    <div class="footer__sidebar-logo">
+                        <img src="./images/footer/footer-logo.png" alt="footer_logo"/>
+                    </div>   
+                </div>
+                <div class="footer__sidebar-content">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Pages</li>
+                        <li>Contact</li>
+                        <li>Services</li>
+                        <li>Portfolio</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+        <div class="footer_menu"><i onclick=showFooterSidebar() class="fas fa-bars"></i></div>
     </footer>
 </body>
 </html>

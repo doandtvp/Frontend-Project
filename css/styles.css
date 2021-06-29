@@ -129,6 +129,81 @@ header {
   text-transform: uppercase;
   text-indent: 28px;
 }
+.header__sidebar-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  display: none;
+}
+.header__sidebar-opacity {
+  width: 60%;
+  background-color: black;
+  height: 100%;
+  opacity: 0.5;
+  position: absolute;
+  left: -60%;
+}
+.header__sidebar {
+  width: 41%;
+  height: 100%;
+  background-color: lightcoral;
+  border-radius: 8px 0 0 8px;
+  position: absolute;
+  right: -41%;
+}
+.header__sidebar-label {
+  width: 100%;
+  height: 40px;
+  font-size: 20px;
+  text-indent: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+}
+.fa-times {
+  float: left;
+  margin-left: 4px;
+}
+.fa-times:hover {
+  cursor: pointer;
+}
+.fa-user {
+  float: right;
+  margin-right: 5px;
+}
+.header__sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.header__sidebar-content ul li {
+  height: 40px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 40px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+  border-bottom: 1px solid lightcoral;
+}
+.header__sidebar-content ul li:hover {
+  font-size: 20px;
+  background-color: lightcoral;
+  border: 1px solid white;
+  border-radius: 4px;
+  color: white;
+}
+.header_menu {
+  display: none;
+}
+.header_menu:hover {
+  cursor: pointer;
+}
 .contact {
   display: flex;
   flex-wrap: wrap;
@@ -586,6 +661,7 @@ footer {
   height: 420px;
   background-color: #333333;
   margin-top: 40px;
+  position: relative;
 }
 .footer__content {
   max-width: 1200px;
@@ -697,6 +773,90 @@ footer {
   margin-left: 9px;
   color: white;
 }
+.footer__sidebar-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  flex-wrap: wrap;
+  display: none;
+}
+.footer__sidebar {
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: #333333;
+  position: absolute;
+  right: 0;
+}
+.footer__sidebar-label {
+  width: 100%;
+  height: 140px;
+  font-size: 20px;
+  text-indent: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 10px;
+  border-bottom: 2px solid #d6ba8d;
+}
+.footer__sidebar-logo {
+  width: 100%;
+  text-align: center;
+}
+.footer__sidebar-logo img {
+  margin-top: 20px;
+  width: 140px;
+  display: block;
+  margin: 0 auto;
+}
+.fa-times {
+  float: left;
+  margin-left: 4px;
+}
+.fa-times:hover {
+  cursor: pointer;
+}
+.fa-user {
+  float: right;
+  margin-right: 5px;
+}
+.footer__sidebar-content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+}
+.footer__sidebar-content ul li {
+  height: 40px;
+  font-weight: 400;
+  font-family: "Fira Sans", sans-serif;
+  line-height: 40px;
+  font-size: 16px;
+  color: white;
+}
+.footer__sidebar-content ul li:hover {
+  font-size: 20px;
+  border-bottom: 2px solid #d6ba8d;
+  border-top: 2px solid #d6ba8d;
+  border-radius: 4px;
+  color: #d6ba8d;
+}
+.footer_menu {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 20px;
+  width: 18px;
+  height: 18px;
+  color: #d6ba8d;
+  padding: 8px;
+  display: none;
+}
+.footer_menu:hover {
+  cursor: pointer;
+}
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
   .header-title__second-line-left {
     font-size: 75px;
@@ -746,10 +906,10 @@ footer {
     line-height: 45px;
   }
   .contact__items p {
-    font-size: 14px;
+    font-size: 12px;
   }
   .contact__items span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .banner__title {
     height: 200px;
@@ -911,9 +1071,8 @@ footer {
     font-size: 13px;
   }
   .header-title__second-line-left {
-    font-size: 41px;
-    line-height: 55px;
-    letter-spacing: 20px;
+    font-size: 45px;
+    letter-spacing: 16px;
   }
   .header-title__second-line-right {
     width: 5%;
@@ -1039,7 +1198,7 @@ footer {
     margin: 45px 4px;
   }
   .footer__content-top-sub__content {
-    margin-top: 18px;
+    margin-top: 20px;
     width: 70%;
     height: 27.5%;
   }
@@ -1097,8 +1256,8 @@ footer {
     width: 100%;
   }
   .header-title__second-line-left {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 40px;
+    line-height: 55px;
     letter-spacing: 15px;
     margin-top: 25px;
     width: 100%;
@@ -1107,14 +1266,15 @@ footer {
     display: none;
   }
   .header-title__button {
-    margin-top: 70px;
+    margin-top: 95px;
+    font-size: 16px;
   }
   .header-title__button div {
-    width: 85px;
-    height: 25px;
-    font-size: 5px;
-    line-height: 25px;
-    text-indent: 12px;
+    width: 120px;
+    height: 30px;
+    font-size: 10px;
+    line-height: 30px;
+    text-indent: 10px;
     margin: 0 auto;
   }
   .contact__items:first-child,
@@ -1130,6 +1290,9 @@ footer {
   }
   .contact__items span {
     font-size: 10px;
+  }
+  .header_menu {
+    display: block;
   }
   .banner {
     max-width: 600px;
@@ -1206,6 +1369,9 @@ footer {
     min-height: 1240px;
     height: auto;
     margin-bottom: 90px;
+  }
+  .blog__title span {
+    font-size: 36px;
   }
   .blog__content-items {
     width: 100%;
@@ -1285,6 +1451,9 @@ footer {
     margin-left: 4px;
     font-size: 10px;
   }
+  .footer_menu {
+    display: block;
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   body {
@@ -1318,11 +1487,11 @@ footer {
     padding-top: 140px;
   }
   .header-title__first-line {
-    font-size: 11px;
+    font-size: 10px;
     width: 100%;
   }
   .header-title__second-line-left {
-    font-size: 20px;
+    font-size: 25px;
     line-height: 35px;
     letter-spacing: 15px;
     margin-top: 25px;
@@ -1332,14 +1501,14 @@ footer {
     display: none;
   }
   .header-title__button {
-    margin-top: 70px;
+    margin-top: 90px;
   }
   .header-title__button div {
-    width: 85px;
-    height: 25px;
-    font-size: 5px;
+    width: 100px;
+    height: 27px;
+    font-size: 7px;
     line-height: 25px;
-    text-indent: 12px;
+    text-indent: 2px;
     margin: 0 auto;
   }
   .contact__items:first-child,
@@ -1350,11 +1519,17 @@ footer {
     width: 33.33%;
   }
   .contact__items p {
-    font-size: 12px;
+    font-size: 7px;
     line-height: 20px;
   }
   .contact__items span {
-    font-size: 10px;
+    font-size: 6px;
+  }
+  .header__sidebar-label {
+    font-size: 16px;
+  }
+  .header__sidebar-content ul li {
+    font-size: 14px;
   }
   .banner {
     max-width: 480px;
@@ -1560,5 +1735,8 @@ footer {
     padding: 6px;
     margin-left: 4px;
     font-size: 10px;
+  }
+  .footer__sidebar-content ul li {
+    font-size: 14px;
   }
 }
