@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- ======FONT======== -->
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,700;1,600&family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- =========bootstrap===== -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet/less" type="text/css" href="css/styles.css">
+    <!-- ========LESS====== -->
     <script src="js/less.js"></script>
     <script src="https://kit.fontawesome.com/ba409467b3.js" crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
@@ -16,35 +21,49 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="logo" >  
-            <img src="./images/header/header-logo.png" />
-            <span onclick=showHeaderSidebar() class="header_menu"><i class="fas fa-bars"></i></span>
-            <span id="cart">
-                <i class="fas fa-shopping-cart"></i>
-                <div id="notice">2</div>
-            </span>
-        </div>
-        <div class="header">
-            <div class="header-title">
-                <div class="header-title__first-line">
-                    <p>Spring 2017</p>
-                </div>
-                <div class="header-title__second-line">
-                    <div class="header-title__second-line-left">
-                        <p>It's Your</p>
-                        <p>Shine Time</p>  
+        <div class="header__container">
+            <div class="logo" >  
+                <img src="./images/header/header-logo.png" />
+                <span onclick=showHeaderSidebar() class="header_menu"><i class="fas fa-bars"></i></span>
+                <span id="cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <div id="notice">2</div>
+                </span>
+            </div>
+            <div class="header">
+                <div class="header-title">
+                    <div class="header-title__first-line">
+                        <p>Spring 2017</p>
                     </div>
-                    <div class="header-title__second-line-right">
-                        <div>
-                            <p>Facebook</p>
-                            <p>Twitter</p>
-                            <p>Instagram</p>
-                            <p>Youtube</p>
+                    <div class="header-title__second-line">
+                        <div class="header-title__second-line-left">
+                            <p>It's Your</p>
+                            <p>Shine Time</p>  
+                        </div>
+                        <div class="header-title__second-line-right">
+                            <ul>
+                                <li>
+                                    <a href="#facebook">Facebook</a>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <a href="#twitter">Twitter</a>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <a href="#instagram">Instagram</a>
+                                    <div class="line"></div>
+                                </li>
+                                <li>
+                                    <a href="#youtube">Youtube</a>
+                                    <div class="line"></div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="header-title__button">
-                    <div>Discover Now</div>
+                    <div class="header-title__button">
+                        <a href="#discover">Discover Now</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,7 +79,9 @@
                 </div>
                 <div class="header__sidebar-content">
                     <ul>
-                        <li>Facebook</li>
+                        <li>
+                            <a href="facebook">Facebook</a>
+                        </li>
                         <li>Twitter</li>
                         <li>Instagram</li>
                         <li>Youtube</li>
@@ -91,17 +112,20 @@
 
     <!-- BANNER -->
     <div class="banner" >
-        <div class="banner__title">
-            <span>It's started with a simple idea: Create quality, well-designed </span>
-            <br/>
-            <span>product that I wanted myself</span>
-        </div>
-        <div class="banner__content">
-            <div class="banner__content-first-content">
-                <div class="banner__content-first-content-left">
-                    <img class="banner-pictures" src="./images/banner/g-ring.jpg" alt="g-ring"/>
+        <div class="banner__container">
+            <div class="banner__title">
+                <span>It's started with a simple idea: Create quality, well-designed </span>
+                <br/>
+                <span>product that I wanted myself</span>
+            </div>
+            <div class="banner__content">
+                <div class="banner__content-tl">
+                    <div class="banner__label">
+                        <p class="banner__label-title">Gold Leaf Ring</p>
+                        <span class="banner__label-price">$179.00</span>
+                    </div>
                 </div>
-                <div class="banner__content-first-content-center">
+                <div class="banner__content-tc">
                     <div class="sale-box">
                         <div id="text_1">sale up to</div>
                         <div id="text_2">70%</div>
@@ -109,46 +133,65 @@
                         <div id="text_4">SHOP NOW</div>
                     </div>
                 </div>
-                <div class="banner__content-first-content-right">
-                    <img class="banner-pictures" src="./images/banner/leaf-ring.jpg" alt="leaf-ring"/>
+                <div class="banner__content-tr">
+                    <div class="banner__label-right">
+                        <p class="banner__label-right-title_1">New Collection</p>
+                        <span class="banner__label-right-title_2">Leaf  Ring</span>
+                    </div>
                 </div>
-            </div >
-
-            <div class="banner__content-second-content">
-                <div class="banner__content-second-content-left">
-                    <img class="banner-pictures" src="./images/banner/bot_girl.jpg" alt="bgirl"/>
+                <div class="banner__content-bl"></div>
+                <div class="banner__content-bc">
+                    <div class="banner__label">
+                        <p class="banner__label-title">Rose Gold Necklaces</p>
+                        <span class="banner__label-price">$179.00</span>
+                    </div>
                 </div>
-                <div class="banner__content-second-content-center">
-                    <img class="banner-pictures" src="./images/banner/neck.jpg" alt="bgirl"/>
-                </div>
-                <div class="banner__content-second-content-right">
-                    <img class="banner-pictures" src="./images/banner/p-ring.jpg" alt="bgirl"/>
+                <div class="banner__content-br">
+                    <!-- <div class="banner__label-br">
+                        <p class="banner__label-br-title">Princess Ring Rose Gold</p>
+                        <span class="banner__label-br-price">Rose gold plated over brass * One size</span>
+                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- CONTAINER -->
-    <section class="container">
-        <div class="container__title">
-            <div class="row">
-                <div class="container__title-feature">
+    <!-- Products -->
+    <section class="products">
+        <div class="products__container">
+            <div class="products__container-title">
+                <div class="products__container-title-feature">
                     <p>Featured items</p> 
                 </div>
-                <div class="container__title-view">
+                <div class="products__container-title-view">
                     <span>View more <i class="fas fa-arrow-circle-right"></i></span>
                 </div>
             </div>
-        </div>
-        <div class="container__content">
-            <div class="row">
-                <article class="container__content-items">
-                    <div class="container__content-items-image t-ring">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+            <div class="products__container-content">
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="t-ring" src="./images/products/t-ring.png" alt="t-ring">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-neck" src="./images/products/t-neck.png" alt="t-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-ring-3" src="./images/products/t-ring-3.png" alt="t-ring-3">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -165,19 +208,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
-                </article>  
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image t-neck">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                </article>
+                <!-- 2 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="t-neck" src="./images/products/t-neck.png" alt="t-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-ring" src="./images/products/t-ring.png" alt="t-ring">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-ring-3" src="./images/products/t-ring-3.png" alt="t-ring-3">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -194,19 +254,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
                 </article> 
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image t-ring-2">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                <!-- 3 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="t-ring-2" src="./images/products/t-ring-2.png" alt="t-ring-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-neck" src="./images/products/t-neck.png" alt="t-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-ring-3" src="./images/products/t-ring-3.png" alt="t-ring-3">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -223,19 +300,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
                 </article> 
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image t-ring-3">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                <!-- 4 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="t-ring-3" src="./images/products/t-ring-3.png" alt="t-ring-3">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-neck" src="./images/products/t-neck.png" alt="t-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="t-ring" src="./images/products/t-ring.png" alt="t-ring">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -252,20 +346,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
                 </article> 
-
-                <!-- row-2 -->
-                <article class="container__content-items">
-                    <div class="container__content-items-image b-ring">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                <!-- 5 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="b-ring" src="./images/products/b-ring.png" alt="b-ring">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-neck" src="./images/products/b-neck.png" alt="b-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-ring-2" src="./images/products/b-ring-2.png" alt="b-ring-2">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -282,19 +392,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
-                </article>
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image b-ring-2">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                </article> 
+                <!-- 6 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="b-ring-2" src="./images/products/b-ring-2.png" alt="b-ring-2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-neck" src="./images/products/b-neck.png" alt="b-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="eardrop" src="./images/products/eardrop.png" alt="eardrop">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -311,19 +438,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
-                </article>
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image b-neck">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                </article> 
+                <!-- 7 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="b-neck" src="./images/products/b-neck.png" alt="b-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-ring" src="./images/products/b-ring.png" alt="b-ring">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./images/products/eardrop.png" alt="eardrop.png">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -340,19 +484,36 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
-                </article>
-
-                <article class="container__content-items">
-                    <div class="container__content-items-image b-eardrop">
-                        <div class="image-hover">
-                            <div class="image-hover__slide">
-                                <i class="fas fa-chevron-left"></i>
-                                <i class="fas fa-chevron-right"></i>
+                </article> 
+                <!-- 8 -->
+                <article class="products__content-items">
+                    <div class="products__content-items-image ">
+                        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="eardrop" src="./images/products/eardrop.png" alt="eardrop">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-neck" src="./images/products/b-neck.png" alt="b-neck">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="b-ring-2" src="./images/products/b-ring-2.png" alt="b-ring-2">
+                                </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="image-hover">
                             <div class="image-hover__shopping">
                                 <div class="image-hover__shopping-add">ADD TO CART</div>
                                 <div class="image-hover__shopping-action">
@@ -369,11 +530,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container__content-items-price">
+                    <div class="products__content-items-price">
                         <p>Kubusbowl Small</p>
-                        <span>$1000</span>
+                        <span>$19.00</span>
                     </div>
-                </article>
+                </article> 
             </div>
         </div>
     </section>
@@ -384,49 +545,45 @@
             <span>Blog update</span>
         </div>
         <div class="blog__content">
-            <div class="row">
-                <article class="blog__content-items">
-                    <div class="blog__content-items-image">
-                        <div id="blog-1"></div>
+            <div class="blog__content-slider">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                    <div class="blog__content-items-label">
-                        <span class="date">JULY 14TH 2016</span>
-                        <p class="title">8 thing i've learned from 8 years Bonfire!</p>
-                        <div class="interactive">
-                            <span><i class="fas fa-eye"></i> 941 Views</span>
-                            <span><i class="fas fa-share-alt"></i> 27 Likes</span>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./images/blog/blog_1.png" alt="blog-1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./images/blog/blog_2.png" alt="blog-2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/blog/blog_3.png" alt="blog-3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
                         </div>
                     </div>
-                </article>
-
-                <article class="blog__content-items">
-                    <div class="blog__content-items-image">
-                        <div id="blog-2"></div>
-                    </div>
-                    <div class="blog__content-items-label">
-                        <span class="date">JULY 14TH 2016</span>
-                        <p class="title">8 thing i have learned from 8 years Bonfire!</p>
-                        <div class="interactive">
-                            <span><i class="fas fa-eye"></i> 941 Views</span>
-                            <span><i class="fas fa-share-alt"></i> 27 Likes</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="blog__content-items">
-                    <div class="blog__content-items-image">
-                        <div id="blog-3"></div>
-                    </div>
-                    <div class="blog__content-items-label">
-                        <span class="date">JULY 14TH 2016</span>
-                        <p class="title">8 thing i have learned from 8 years Bonfire!</p>
-                        <div class="interactive">
-                            <span><i class="fas fa-eye"></i> 941 Views</span>
-                            <span><i class="fas fa-share-alt"></i> 27 Likes</span>
-                        </div>
-                    </div>
-                </article>
-                
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <div class="blog__content-button">Go to blog</div>
         </div>
@@ -434,7 +591,7 @@
 
     <!-- BRAND -->
     <section class="brand">
-        <div class="row">
+        <div class="brand__container">
             <div class="brand__items">
                 <img id="rolex" src="./images/brand/rolex.png" alt="rolex"/>
             </div>
@@ -442,7 +599,7 @@
                 <img id="elle" src="./images/brand/elle.png" alt="elle"/>
             </div>
             <div class="brand__items">
-                <img id="diamond" src="./images/brand/diamond.png" alt="diamond"/>
+                <img src="./images/brand/diamond.png" alt="diamond"/>
             </div>
             <div class="brand__items">
                 <img src="./images/brand/jubilee.png" alt="jubilee"/>
@@ -451,7 +608,7 @@
                 <img src="./images/brand/trion.png" alt="trion"/>
             </div>
             <div class="brand__items">
-                <img src="./images/brand/pandora.png" alt="pandora"/>
+                <img id="pandora" src="./images/brand/pandora.png" alt="pandora"/>
             </div>
         </div>
     </section>
@@ -460,41 +617,37 @@
     <footer>
         <div class="footer__content">
             <div class="footer__content-top">
-                <div class="row">
-                    <div class="footer__content-top-logo">
-                        <img src="./images/footer/footer-logo.png" alt="footer-logo" />
-                    </div>
-                    <div class="footer__content-top-menu">
-                        <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>Pages</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                    <div class="footer__content-top-sub">
-                        <div class="footer__content-top-sub__content">
-                            <span>SUBSCRIBE <i class="fas fa-envelope"></i></span>
-                        </div>
+                <div class="footer__content-top-logo">
+                    <img src="./images/footer/footer-logo.png" alt="footer-logo" />
+                </div>
+                <div class="footer__content-top-menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Services</li>
+                        <li>Portfolio</li>
+                        <li>Pages</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer__content-top-sub">
+                    <div class="footer__content-top-sub__content">
+                        <span>SUBSCRIBE <i class="fas fa-envelope"></i></span>
                     </div>
                 </div>
             </div>
             <div class="footer__content-bottom">
-                <div class="row">
-                    <div class="footer__content-bottom-address">
-                        <p>14 L.E Goulburn St, Sydney 2000NSW - (0008) 1900 6886 </p>
-                        <span>Copyright © 2016 Bonfire</span>
-                    </div>
-                    <div class="footer__content-bottom-social-media">
-                        <ul>
-                            <li><i class="fab fa-facebook-f"></i></li>
-                            <li><i class="fab fa-twitter"></i></li>
-                            <li><i class="fab fa-youtube"></i></li>
-                            <li><i class="fab fa-skype"></i></li>
-                        </ul>
-                    </div>
+                <div class="footer__content-bottom-address">
+                    <p>14 L.E Goulburn St, Sydney 2000NSW - (0008) 1900 6886 </p>
+                    <span>Copyright © 2016 Bonfire</span>
+                </div>
+                <div class="footer__content-bottom-social-media">
+                    <ul>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-youtube"></i></li>
+                        <li><i class="fab fa-skype"></i></li>
+                    </ul>
                 </div>
             </div>
         </div> 
@@ -523,5 +676,9 @@
         </div>
         <div class="footer_menu"><i onclick=showFooterSidebar() class="fas fa-bars"></i></div>
     </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

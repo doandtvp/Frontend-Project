@@ -1,8 +1,13 @@
 .banner {
   max-width: 1920px;
   width: 100%;
-  padding: 0 100px;
   box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.banner__container {
+  width: 89.5%;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -14,7 +19,7 @@
 }
 
 .banner__content {
-  margin-top: 28px;
+  margin-top: 30px;
 }
 
 .banner__title {
@@ -32,32 +37,152 @@
   font-family: "Cormorant Garamond", serif;
 }
 
-.banner__content-first-content,
-.banner__content-second-content {
+.banner__content {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  justify-content: space-between;
+}
+
+.banner__content-tl,
+.banner__content-tr,
+.banner__content-bl,
+.banner__content-bc {
+  max-width: 390px;
+  width: 22.58%;
   height: 520px;
-  margin-bottom: 55px;
-}
-
-.banner-pictures {
-  width: 100%;
-  height: 100%;
-}
-
-// first
-.banner__content-first-content-left {
-  width: 22.9%;
-  height: 100%;
-}
-
-.banner__content-first-content-center {
+  border: 1px solid black;
+  margin-bottom: 48px;
   position: relative;
-  width: 48.2%;
-  height: 100%;
-  background: url(../images/banner/girl.png) no-repeat 42.5% 37%;
-  margin: auto;
+}
+
+.banner__label {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  bottom: 29px;
+}
+
+.banner__content-tc,
+.banner__content-br {
+  max-width: 835.41px;
+  width: 48.5%;
+  border: 1px solid black;
+  height: 520px;
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.banner__content-tl {
+  background: url("../images/banner/tl_ring.png") 51% 55% no-repeat,
+    url("../images/banner/tl_g.png") 50% 118% no-repeat,
+    url("../images/banner/gray_bg.png") no-repeat;
+}
+
+.banner__label-title {
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Fira Sans";
+  text-align: center;
+  margin: 0 -1px 12px 0;
+}
+
+.banner__label-price {
+  font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 36px;
+  color: #d6ba8d;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  text-align: center;
+}
+
+.banner__content-tc {
+  background: url("../images/banner/tc_girl.png") 43% 39% no-repeat;
+}
+
+.banner__content-tr {
+  background: url("../images/banner/tr_line.png") 51% 50% no-repeat,
+    url("../images/banner/tr_ring.png") 29% 88% no-repeat,
+    url("../images/banner/gray_bg.png") no-repeat;
+}
+
+.banner__label-right {
+  position: absolute;
+  width: 80%;
+  text-align: left;
+  bottom: 57px;
+  right: 30px;
+  height: 140px;
+}
+
+.banner__label-right-title_1 {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 24px;
+  color: #333333;
+  font-weight: 400;
+  font-family: "Fira Sans";
+  text-transform: uppercase;
+  margin: 13px 0 30px 0;
+}
+
+.banner__label-right-title_2 {
+  font-size: 72px;
+  line-height: 47px;
+  color: #d6ba8d;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+  letter-spacing: 1.9px;
+}
+
+.banner__content-bl {
+  background: url("../images/banner/bl_girl.png") -33% 9% no-repeat,
+    url("../images/banner/bl_text.png") center no-repeat,
+    url("../images/banner/bl_bg.png") no-repeat;
+}
+
+.banner__content-bc {
+  background: url("../images/banner/bc_neck.png") 55% 39.5% no-repeat,
+    url("../images/banner/bc_r.png") 65% 117% no-repeat,
+    url("../images/banner/gray_bg.png") no-repeat;
+}
+
+.banner__content-br {
+  background: url("../images/banner/br_p.png") 29% 92% no-repeat,
+    url("../images/banner/br_ring.png") 81% 84% no-repeat,
+    url("../images/banner/gray_bg.png") 43% 39% repeat;
+}
+
+.banner__label-br {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  border: 1px solid black;
+  top: 0;
+  text-align: left;
+}
+
+.banner__label-br-title {
+  width: 296px;
+  height: 131px;
+  font-size: 48px;
+  line-height: 56px;
+  color: #333333;
+  font-weight: 700;
+  font-family: "Cormorant Garamond";
+}
+
+.banner__label-br-price {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #696969;
+  font-weight: 400;
+  font-family: "Fira Sans";
 }
 
 .sale-box {
@@ -66,8 +191,8 @@
   max-height: 335px;
   width: 100%;
   height: 100%;
-  top: 17.1%;
-  right: 4%;
+  top: 17%;
+  right: 4.2%;
   border-top: 5px solid white;
   border-right: 5px solid white;
   background: url(../images/banner/sale-box.png) no-repeat;
@@ -122,27 +247,4 @@
   text-align: center;
   margin-top: 61px;
   padding-left: 1px;
-}
-
-.banner__content-first-content-right {
-  width: 22.9%;
-  height: 100%;
-}
-
-// second
-.banner__content-second-content-left,
-.banner__content-second-content-center {
-  box-sizing: border-box;
-  width: 22.9%;
-  height: 100%;
-}
-
-.banner__content-second-content-center {
-  margin: auto;
-}
-
-.banner__content-second-content-right {
-  width: 48.4%;
-  box-sizing: border-box;
-  height: 100%;
 }
