@@ -1,23 +1,26 @@
-.container {
-  max-width: 1200px;
+.products {
+  width: 1920px;
+  width: 100%;
+}
+
+.products__container {
+  max-width: 1170px;
+  width: 100%;
   min-height: 1000px;
-  height: auto;
-  width: 100%;
-  margin: 77px auto;
+  margin: 0 auto;
 }
 
-.container__title {
+.products__container-title {
   width: 100%;
-  height: auto;
-  padding: 60px 15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   box-sizing: border-box;
+  height: auto;
+  padding: 87px 0 55px 0;
 }
 
-.container__title-feature {
-  width: 80%;
-}
-
-.container__title-feature p {
+.products__container-title p {
   margin: 0;
   font-size: 56px;
   line-height: 28px;
@@ -26,12 +29,7 @@
   font-family: "Cormorant Garamond", serif;
 }
 
-.container__title-view {
-  width: 20%;
-  text-align: right;
-}
-
-.container__title-view span {
+.products__container-title span {
   font-size: 14px;
   letter-spacing: 2.3px;
   line-height: 61px;
@@ -42,66 +40,80 @@
   margin-right: 13px;
 }
 
-.container__content {
+.products__container-content {
   width: 100%;
   height: auto;
-  margin-top: 35px;
-}
-
-.row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products__content-items {
+  width: 23.5%;
+  height: 358px;
+  margin-bottom: 55px;
+}
+
+.products__content-items-image {
+  position: relative;
+  width: 100%;
+  height: 90%;
+}
+
+.products__content-items-image:hover {
+  .carousel-control-prev,
+  .carousel-control-next,
+  .image-hover {
+    display: block;
+  }
+}
+
+.carousel {
   width: 100%;
   height: 100%;
 }
 
-.container__content-items {
-  width: 25%;
-  height: 386px;
-  box-sizing: border-box;
-  padding: 15px 15px;
-  margin-bottom: 25px;
-}
-
-.container__content-items-image {
+.carousel-item {
   width: 100%;
-  height: 89%;
-  position: relative;
+  height: 100%;
   text-align: center;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
+
 .t-ring {
-  background: url("../images/container/t-ring.png") no-repeat 50% 97%;
+  margin-top: 84px;
 }
 
 .t-neck {
-  background: url("../images/container/t-neck.png") no-repeat 43% 0;
+  object-position: -6px;
 }
 
 .t-ring-2 {
-  background: url("../images/container/t-ring-2.png") no-repeat 49%;
+  object-position: -120px 11px;
 }
 
 .t-ring-3 {
-  background: url("../images/container/t-ring-3.png") no-repeat 50% 145%;
+  object-position: 0 62px;
 }
 
-// row-2
-
 .b-ring {
-  background: url("../images/container/b-ring.png") no-repeat 48% 62%;
+  margin-top: 92px;
 }
 
 .b-ring-2 {
-  background: url("../images/container/b-ring-2.png") no-repeat 54% 67%;
+  object-position: 5px 30px;
 }
 
 .b-neck {
-  background: url("../images/container/b-neck.png") no-repeat 100% 90%;
+  object-position: -39px -74px;
 }
 
-.b-eardrop {
-  background: url("../images/container/eardrop.png") no-repeat 67% 54%;
+.eardrop {
+  object-position: 10px 46px;
 }
 
 .image-hover {
@@ -112,21 +124,10 @@
   display: none;
 }
 
-.container__content-items-image:hover .image-hover {
-  display: block;
-}
-
-.image-hover__slide,
 .image-hover__shopping {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
-}
-
-.image-hover__slide {
-  height: 10%;
-  padding: 7px 0;
-  top: 41%;
 }
 
 .image-hover__shopping {
@@ -138,7 +139,7 @@
 }
 
 .image-hover__shopping-add {
-  width: 49.9%;
+  width: 63.5%;
   height: 100%;
   background-color: #d6ba8d;
   color: white;
@@ -163,22 +164,13 @@
   margin: 0 0.5px;
 }
 
-.fa-chevron-left {
-  float: left;
-}
-
-.fa-chevron-right {
-  float: right;
-}
-
-.container__content-items-price {
+.products__content-items-price {
   width: 100%;
-  height: 20%;
   text-align: center;
 }
 
-.container__content-items-price p {
-  padding: 16px 0 0 2px;
+.products__content-items-price p {
+  padding: 10px 0 0 2px;
   line-height: 2em;
   font-size: 14px;
   letter-spacing: 1px;
@@ -188,7 +180,7 @@
   margin: 0;
 }
 
-.container__content-items-price span {
+.products__content-items-price span {
   font-size: 18px;
   letter-spacing: 1px;
   color: #d6ba8d;
