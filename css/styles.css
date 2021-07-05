@@ -1459,18 +1459,14 @@ footer {
     width: 100%;
     text-align: center;
   }
-  .header-title__first-line p {
-    color: white;
-  }
   .header-title__second-line {
     margin-bottom: 50px;
   }
   .header-title__second-line-left {
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 15px;
-    line-height: 75px;
+    line-height: 55px;
     width: 100%;
-    color: white;
   }
   .header-title__button {
     text-indent: 0;
