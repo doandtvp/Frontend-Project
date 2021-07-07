@@ -1,14 +1,14 @@
 .banner {
-  max-width: 1920px;
   width: 100%;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .banner__container {
-  width: 89.5%;
+  max-width: 1750px;
+  width: 100%;
   height: auto;
-  margin: 0 auto;
+  margin: 75px auto;
+  box-sizing: border-box;
+  padding: 0 15px;
 }
 
 .banner__title,
@@ -18,30 +18,28 @@
   text-align: center;
 }
 
-.banner__content {
-  margin-top: 30px;
-}
-
 .banner__title {
   box-sizing: border-box;
-  height: 290px;
-  padding: 105px 0;
+  height: 220px;
+  padding-top: 40px;
   text-align: center;
-}
 
-.banner__title span {
-  font-size: 33.5px;
-  line-height: 48px;
-  color: #333333;
-  font-weight: 600;
-  font-family: "Cormorant Garamond", serif;
+  span {
+    font-size: 33.5px;
+    line-height: 48px;
+    color: @black-color;
+    font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+  }
 }
 
 .banner__content {
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 40px;
+  row-gap: 50px;
+  .flex-display;
 }
 
 .banner__content-tl,
@@ -51,8 +49,21 @@
   max-width: 390px;
   width: 22.58%;
   height: 520px;
-  margin-bottom: 48px;
   position: relative;
+}
+
+.banner__content-tc,
+.banner__content-br {
+  max-width: 835.41px;
+  width: 48.5%;
+  height: 520px;
+  position: relative;
+}
+
+.banner__content-tl {
+  background: url("../images/banner/tl_ring.png") 51% 55% no-repeat,
+    url("../images/banner/tl_g.png") 50% 118% no-repeat;
+  border: 1px solid @banner-boder;
 }
 
 .banner__label {
@@ -62,26 +73,11 @@
   bottom: 29px;
 }
 
-.banner__content-tc,
-.banner__content-br {
-  max-width: 835.41px;
-  width: 48.5%;
-  height: 520px;
-  margin-bottom: 48px;
-  position: relative;
-}
-
-.banner__content-tl {
-  background: url("../images/banner/tl_ring.png") 51% 55% no-repeat,
-    url("../images/banner/tl_g.png") 50% 118% no-repeat;
-  border: 1px solid #efefef;
-}
-
 .banner__label-title {
   font-size: 24px;
   letter-spacing: 1px;
   line-height: 36px;
-  color: #333333;
+  color: @black-color;
   font-weight: 400;
   font-family: "Fira Sans";
   text-align: center;
@@ -92,7 +88,7 @@
   font-size: 24px;
   letter-spacing: 1px;
   line-height: 36px;
-  color: #d6ba8d;
+  color: @gold-color;
   font-weight: 700;
   font-family: "Cormorant Garamond";
   text-align: center;
@@ -121,7 +117,7 @@
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 24px;
-  color: #333333;
+  color: @black-color;
   font-weight: 400;
   font-family: "Fira Sans";
   text-transform: uppercase;
@@ -129,9 +125,9 @@
 }
 
 .banner__label-right-title_2 {
-  font-size: 3.65vw;
+  font-size: 75px;
   line-height: 47px;
-  color: #d6ba8d;
+  color: @gold-color;
   font-weight: 700;
   font-family: "Cormorant Garamond";
   letter-spacing: 1.9px;
@@ -147,7 +143,7 @@
   background: url("../images/banner/bc_neck.png") 55% 39.5% no-repeat,
     url("../images/banner/bc_r.png") 65% 117% no-repeat;
 
-  border: 1px solid #efefef;
+  border: 1px solid @banner-boder;
 }
 
 .banner__content-br {
@@ -169,7 +165,7 @@
   height: 130px;
   font-size: 48px;
   line-height: 56px;
-  color: #333333;
+  color: @black-color;
   font-weight: 700;
   font-family: "Cormorant Garamond";
   margin: 0;
@@ -179,13 +175,13 @@
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 24px;
-  color: #696969;
+  color: @span-color;
   font-weight: 400;
   font-family: "Fira Sans";
 }
 
 .banner__content div:hover {
-  cursor: pointer;
+  cursor: @mouse-over;
 }
 
 .sale-box {
@@ -196,18 +192,18 @@
   height: 100%;
   top: 17%;
   right: 4.2%;
-  border-top: 5px solid white;
-  border-right: 5px solid white;
+  border-top: 5px solid @white-color;
+  border-right: 5px solid @white-color;
   background: url(../images/banner/sale-box.png) no-repeat;
 }
 
-#text_1 {
+.text_1 {
   width: 100%;
   height: 26px;
   font-size: 18px;
   letter-spacing: 4px;
   line-height: 24px;
-  color: #333333;
+  color: @black-color;
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
@@ -215,36 +211,36 @@
   padding-left: 2.5px;
 }
 
-#text_2 {
+.text_2 {
   width: 100%;
   font-size: 100px;
   line-height: 24px;
-  color: #333333;
+  color: @black-color;
   font-weight: 700;
   font-family: "Cormorant Garamond", serif;
   text-align: center;
   margin-top: 51px;
 }
 
-#text_3 {
+.text_3 {
   width: 100%;
   height: 26px;
   font-size: 24px;
   line-height: 24px;
-  color: #696969;
+  color: @span-color;
   font-weight: 700;
   font-family: "Cormorant Garamond", serif;
   text-align: center;
   margin-top: 64px;
 }
 
-#text_4 {
+.text_4 {
   width: 100%;
   height: 26px;
   font-size: 14px;
   letter-spacing: 3px;
   line-height: 24px;
-  color: #696969;
+  color: @span-color;
   font-weight: 700;
   font-family: "Fira Sans", sans-serif;
   text-align: center;
