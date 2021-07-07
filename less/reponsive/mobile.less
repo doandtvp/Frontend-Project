@@ -1,30 +1,35 @@
 @media all and (max-width: 480px) {
   header {
-    max-width: 480px;
     width: 100%;
-    background-position: center;
+    height: 700px;
+    background-size: cover;
   }
 
-  .logo img {
-    margin-left: 5%;
+  .header__container {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
   }
 
   .header-title {
-    left: 0;
-    top: 50%;
-    width: 100%;
     text-align: center;
   }
 
-  .header-title__second-line {
-    margin-bottom: 50px;
+  .header-title__first-line {
+    margin-top: 200px;
   }
 
-  .header-title__second-line-left {
-    font-size: 40px;
-    letter-spacing: 15px;
-    line-height: 55px;
-    width: 100%;
+  .header-title__second-line {
+    margin-bottom: 20px;
+    p {
+      font-size: 60px;
+      letter-spacing: 15px;
+      line-height: 70px;
+    }
+  }
+
+  .header-title__social-media {
+    display: none;
   }
 
   .header-title__button {
@@ -33,40 +38,32 @@
     margin: 0 auto;
   }
 
-  .header__container {
-    width: 100%;
-    background-position: 35%;
-  }
-
-  .header-title__second-line-right {
-    display: none;
-  }
-
   .header_menu {
     display: block;
   }
 
-  #cart {
+  .cart {
     display: none;
   }
 
   .header__sidebar {
     width: 100%;
     border-radius: 0;
+    height: 700px;
   }
 
-  .contact {
-    max-width: 480px;
-    width: 100%;
+  .banner__title span {
+    font-size: 18px;
   }
 
-  .contact__items:first-child,
-  .contact__items:last-child {
-    display: none;
+  .banner__content {
+    justify-content: space-around;
   }
 
-  .banner {
-    max-width: 480px;
+  .banner__content-tl,
+  .banner__content-tr,
+  .banner__content-bl,
+  .banner__content-bc {
     width: 100%;
   }
 
@@ -83,13 +80,12 @@
     left: 10px;
   }
 
-  .products {
-    max-width: 480px;
+  .row {
     width: 100%;
   }
 
   .products__container {
-    max-width: 320px;
+    max-width: 350px;
     width: 100%;
     margin: 0 auto;
   }
@@ -98,17 +94,20 @@
     justify-content: center;
   }
 
-  .products__container-title p {
-    font-size: 30px;
-  }
-
-  .products__container-title span {
-    font-size: 10px;
-    margin: 0;
-  }
-
   .products__content-items {
-    width: 100%;
+    width: calc(100% * 12 / 12);
+    padding: 0;
+  }
+
+  .products__container-title {
+    p {
+      font-size: 30px;
+    }
+
+    span {
+      font-size: 10px;
+      margin: 0;
+    }
   }
 
   .b-neck {
@@ -120,37 +119,37 @@
   }
 
   .blog {
-    max-width: 480px;
     width: 100%;
   }
 
   .blog__content {
-    max-width: 320px;
     width: 100%;
   }
 
-  .brand {
-    max-width: 480px;
-    width: 100%;
+  .blog__content-items {
+    justify-content: center;
   }
 
   .brand__container {
+    max-width: 350px;
     width: 100%;
     justify-content: center;
   }
 
   .brand__items {
-    width: 100%;
-    margin-bottom: 40px;
+    width: calc(100% * 12 / 12);
+  }
+
+  .brand__content .row {
+    width: auto;
   }
 
   .footer {
-    max-width: 480px;
     width: 100%;
   }
 
   .footer__content {
-    padding: 0;
+    width: 100%;
   }
 
   .footer__content-top-logo {
@@ -166,59 +165,71 @@
     display: none;
   }
 
-  .footer__content-top-sub {
-    margin-top: 35px;
-  }
-
   .footer_menu {
     display: block;
+  }
+
+  .footer__content-top-sub__content {
+    width: 35%;
   }
 }
 
 @media all and (max-width: 320px) {
   header {
-    max-width: 320px;
     width: 100%;
     height: 500px;
-    background-size: 120%, auto, cover;
-    background-position: 0% 100%, center, center;
+  }
+
+  .header__container {
+    width: 100%;
   }
 
   .header-title__first-line {
     font-size: 14px;
+    margin-top: 180px;
   }
 
-  .header-title__second-line-left {
-    font-size: 35px;
-    letter-spacing: 10px;
-    line-height: 50px;
-    width: 100%;
+  .header-title__second-line {
+    margin-top: 0;
+    p {
+      font-size: 45px;
+      letter-spacing: 3px;
+      line-height: 70px;
+    }
   }
 
   .header-title__button {
     font-size: 12px;
   }
 
+  .header__sidebar {
+    height: 500px;
+  }
+
   .contact {
-    max-width: 320px;
     width: 100%;
   }
 
-  .contact__items > p {
-    font-size: 12px;
+  .contact__container {
+    max-width: 310px;
+    width: 100%;
   }
 
-  .contact__items > span {
-    font-size: 8px;
+  .contact__items {
+    p {
+      font-size: 12px;
+    }
+
+    span {
+      font-size: 8px;
+    }
   }
 
   .banner {
-    max-width: 320px;
     width: 100%;
   }
 
   .banner__content {
-    max-width: 320px;
     width: 100%;
   }
 
@@ -240,6 +251,7 @@
   }
 
   .banner__label-br-title {
+    width: 260px;
     font-size: 40px;
   }
 
@@ -257,13 +269,6 @@
     top: 25%;
   }
 
-  .banner__content-br {
-    background: url(http://127.0.0.1:5500/DE_3/images/banner/br_ring.png) 81%
-        84% no-repeat,
-      url(http://127.0.0.1:5500/DE_3/images/banner/gray_bg.png) 43% 39% repeat;
-    background-size: 100%;
-  }
-
   .banner__label-br {
     width: 100%;
     top: 35px;
@@ -271,33 +276,35 @@
   }
 
   .products {
-    max-width: 320px;
     width: 100%;
   }
 
   .products__container {
-    max-width: 280px;
+    max-width: 310px;
   }
 
-  .products__container-title p {
-    font-size: 25px;
-  }
+  .products__container-title {
+    p {
+      font-size: 25px;
+    }
 
-  .products__container-title span {
-    font-size: 8px;
+    span {
+      font-size: 8px;
+    }
   }
 
   .blog {
-    max-width: 320px;
     width: 100%;
   }
 
-  .blog__title span {
-    font-size: 30px;
+  .blog__title {
+    span {
+      font-size: 7vw;
+    }
   }
 
   .blog__content {
-    max-width: 280px;
+    max-width: 310px;
     width: 100%;
   }
 
@@ -309,26 +316,38 @@
     font-size: 20px;
   }
 
-  .interactive span {
-    font-size: 10px;
+  .interactive {
+    span {
+      font-size: 10px;
+    }
   }
 
-  .banner {
-    max-width: 320px;
+  .brand {
     width: 100%;
   }
 
-  .banner__content {
-    max-width: 280px;
+  .brand__container {
+    max-width: 310px;
     width: 100%;
   }
 
   .footer {
-    max-width: 320px;
     width: 100%;
   }
 
+  .footer__content {
+    width: 100%;
+  }
+
+  .footer__content-bottom {
+    margin-top: 30px;
+  }
+
   .footer__content-bottom-address {
-    font-size: 12px;
+    font-size: 10px;
+  }
+
+  .footer__content-top-sub__content {
+    width: 35%;
   }
 }

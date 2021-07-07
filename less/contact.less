@@ -1,31 +1,39 @@
 .contact {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: @max-width;
   width: 100%;
-  padding: 15px 0;
+}
+
+.contact__container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  .flex-display;
 }
 
 .contact__items {
-  width: 20%;
+  width: 33.33%;
   text-align: center;
-  padding-top: 2px;
-}
+  box-sizing: border-box;
+  padding-top: 10px;
 
-.contact__items > p {
-  font-size: 18px;
-  letter-spacing: 2px;
-  line-height: 30px;
-  color: #333333;
-  font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
-  margin: 0;
-}
+  p {
+    font-size: 18px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    color: #333;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+    margin: 0;
+  }
 
-.contact__items > span {
-  font-size: 16px;
-  line-height: 28px;
-  color: #ababab;
-  font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  span {
+    font-size: 16px;
+    line-height: 28px;
+    color: #ababab;
+    font-weight: 400;
+    font-family: "Fira Sans", sans-serif;
+  }
 }

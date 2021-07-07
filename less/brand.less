@@ -1,47 +1,65 @@
 .brand {
-  max-width: 1920px;
   width: 100%;
 }
 
 .brand__container {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
-  display: flex;
+  .flex-display;
   flex-wrap: wrap;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.brand__content {
+  width: 100%;
 }
 
 .brand__items {
   text-align: center;
-  width: 15%;
+  flex: 0 0 auto;
+  width: calc(100% * 2 / 12);
+  padding: 0 15px;
+  box-sizing: border-box;
+  &:hover {
+    cursor: pointer;
+    img:first-child {
+      display: none;
+    }
+
+    img:last-child {
+      display: initial;
+    }
+  }
+
+  img:last-child {
+    display: none;
+  }
 }
 
-.brand__items img:hover {
-  cursor: pointer;
-  filter: brightness(0.1);
-}
-
-#rolex {
+.rolex {
   margin-right: 7px;
-  margin-top: -10px;
+  margin-top: 5px;
 }
 
-#elle {
+.elle {
   margin-top: 10px;
-  opacity: 0.3;
 }
 
-#jubilee {
+.jubilee {
   margin-top: -2px;
 }
 
-#trion {
-  margin-left: 9px;
+.diamond {
+  margin-top: 12px;
 }
 
-#pandora {
-  margin-top: 18px;
+.trion {
+  margin-left: 5px;
+}
+
+.pandora {
+  margin-top: 24px;
   margin-right: 5px;
 }
