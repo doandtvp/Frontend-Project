@@ -29,7 +29,7 @@
     line-height: 48px;
     color: @black-color;
     font-weight: 600;
-    font-family: "Cormorant Garamond", serif;
+    font-family: @cormorantGaramond-font;
   }
 }
 
@@ -61,9 +61,8 @@
 }
 
 .banner__content-tl {
-  background: url("../images/banner/tl_ring.png") 51% 55% no-repeat,
-    url("../images/banner/tl_g.png") 50% 118% no-repeat;
-  border: 1px solid @banner-boder;
+  background: url("../images/banner/tl.png");
+  .custom-background;
 }
 
 .banner__label {
@@ -79,7 +78,7 @@
   line-height: 36px;
   color: @black-color;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: @firaSan-font;
   text-align: center;
   margin: 0 -1px 12px 0;
 }
@@ -90,18 +89,18 @@
   line-height: 36px;
   color: @gold-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: @cormorantGaramond-font;
   text-align: center;
 }
 
 .banner__content-tc {
-  background: url("../images/banner/tc_girl.png") 43% 39% no-repeat;
+  background: url("../images/banner/tc.png");
+  .custom-background;
 }
 
 .banner__content-tr {
-  background: url("../images/banner/tr_line.png") 51% 50% no-repeat,
-    url("../images/banner/tr_ring.png") 29% 88% no-repeat,
-    url("../images/banner/gray_bg.png") no-repeat;
+  background: url("../images/banner/tr.png");
+  .custom-background;
 }
 
 .banner__label-right {
@@ -119,7 +118,7 @@
   line-height: 24px;
   color: @black-color;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: @firaSan-font;
   text-transform: uppercase;
   margin: 13px 0 30px 0;
 }
@@ -129,27 +128,23 @@
   line-height: 47px;
   color: @gold-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: @cormorantGaramond-font;
   letter-spacing: 1.9px;
 }
 
 .banner__content-bl {
-  background: url("../images/banner/bl_girl_2.png") right bottom no-repeat,
-    url("../images/banner/bl_text.png") center no-repeat,
-    url("../images/banner/bl_bg.png") no-repeat;
+  background: url("../images/banner/bl.png");
+  .custom-background;
 }
 
 .banner__content-bc {
-  background: url("../images/banner/bc_neck.png") 55% 39.5% no-repeat,
-    url("../images/banner/bc_r.png") 65% 117% no-repeat;
-
-  border: 1px solid @banner-boder;
+  background: url("../images/banner/bc.png");
+  .custom-background;
 }
 
 .banner__content-br {
-  background: url("../images/banner/br_p.png") 29% 92% no-repeat,
-    url("../images/banner/br_ring.png") 81% 84% no-repeat,
-    url("../images/banner/gray_bg.png") 43% 39% repeat;
+  background: url("../images/banner/br.png");
+  .custom-background;
 }
 
 .banner__label-br {
@@ -167,7 +162,7 @@
   line-height: 56px;
   color: @black-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: @cormorantGaramond-font;
   margin: 0;
 }
 
@@ -177,7 +172,7 @@
   line-height: 24px;
   color: @span-color;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: @firaSan-font;
 }
 
 .banner__content div:hover {
@@ -205,7 +200,7 @@
   line-height: 24px;
   color: @black-color;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: @firaSan-font;
   text-align: center;
   margin-top: 39px;
   padding-left: 2.5px;
@@ -217,7 +212,7 @@
   line-height: 24px;
   color: @black-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: @cormorantGaramond-font;
   text-align: center;
   margin-top: 51px;
 }
@@ -229,7 +224,7 @@
   line-height: 24px;
   color: @span-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: @cormorantGaramond-font;
   text-align: center;
   margin-top: 64px;
 }
@@ -242,7 +237,7 @@
   line-height: 24px;
   color: @span-color;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: @firaSan-font;
   text-align: center;
   margin-top: 61px;
   padding-left: 1px;

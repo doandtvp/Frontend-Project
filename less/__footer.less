@@ -2,12 +2,12 @@ footer {
   width: 100%;
   height: 420px;
   background-color: @black-color;
-  margin-top: 62px;
+  margin-top: 60px;
   position: @position-re;
 }
 
 .footer__content {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
   padding: 55px 15px 90px 15px;
@@ -63,14 +63,16 @@ footer {
       font-size: 14px;
       letter-spacing: 1px;
       line-height: 24px;
-      color: @footer-menu-color;
       font-weight: 700;
-      font-family: "Fira Sans", sans-serif;
+      font-family: @firaSan-font;
       text-transform: uppercase;
       margin: 92px 17px 0 19px;
-      &:hover {
-        color: @gold-color;
-        cursor: @mouse-over;
+      a {
+        color: @fc-span-color;
+        &:hover {
+          color: @gold-color;
+          cursor: @mouse-over;
+        }
       }
     }
   }
@@ -78,14 +80,17 @@ footer {
 
 .footer__content-top-sub {
   width: 20%;
+  display: flex;
+  justify-content: flex-end;
+
+  color: @white-color;
 }
 
 .footer__content-top-sub__content {
-  float: right;
   width: 68%;
   height: 20.5%;
   text-align: center;
-  border: 2px solid @footer-menu-color;
+  border: 2px solid @fc-span-color;
   box-sizing: border-box;
   padding: 6px 0px;
   margin-top: 84px;
@@ -107,9 +112,9 @@ footer {
     font-size: 14px;
     letter-spacing: 2px;
     line-height: 24px;
-    color: @footer-menu-color;
+    color: @fc-span-color;
     font-weight: 700;
-    font-family: "Fira Sans", sans-serif;
+    font-family: @firaSan-font;
   }
 
   i {
@@ -131,7 +136,7 @@ footer {
   p {
     line-height: 25px;
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
+    font-family: @firaSan-font;
     margin: 22px 0 4px 0;
   }
 }
@@ -152,8 +157,8 @@ footer {
       border-radius: 50%;
       box-sizing: border-box;
       text-align: center;
-      border: 1px solid @footer-menu-color;
-      color: @footer-menu-color;
+      border: 1px solid @fc-span-color;
+      color: @fc-span-color;
       .flex-display;
       justify-content: center;
       align-items: center;
@@ -233,15 +238,19 @@ footer {
     li {
       height: 40px;
       font-weight: 400;
-      font-family: "Fira Sans", sans-serif;
+      font-family: @firaSan-font;
       line-height: 40px;
       font-size: 14px;
-      color: @footer-menu-color;
-      &:hover {
-        font-size: 18px;
-        border-radius: 4px;
-        color: @gold-color;
-        text-decoration: underline;
+
+      a {
+        color: @fc-span-color;
+        &:hover {
+          font-size: 18px;
+          border-radius: 4px;
+          color: @gold-color;
+          text-decoration: underline;
+          cursor: @mouse-over;
+        }
       }
     }
   }
