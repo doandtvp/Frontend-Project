@@ -7,7 +7,7 @@
   max-width: 1200px;
   width: 100%;
   height: auto;
-  background-color: #faf9f9;
+  background-color: @blog-bg-color;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 0 15px;
@@ -53,17 +53,20 @@
 }
 
 .blog-1 {
-  background: url("../images/blog/blog_1.png") 50% 40% no-repeat;
+  background: url("../images/blog/blog_1.png");
+  .custom-background;
   .blog-details;
 }
 
 .blog-2 {
-  background: url("../images/blog/blog_2.png") 50% 60% no-repeat;
+  background: url("../images/blog/blog_2.png");
+  .custom-background;
   .blog-details;
 }
 
 .blog-3 {
-  background: url("../images/blog/blog_3.png") 10% 0% no-repeat;
+  background: url("../images/blog/blog_3.png");
+  .custom-background;
   .blog-details;
 }
 
@@ -72,11 +75,11 @@
   line-height: 28px;
   color: @black-color;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: @cormorantGaramond-font;
   position: absolute;
-  top: -5px;
-  right: 34%;
-  left: 34%;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .blog__content-labels {
@@ -88,9 +91,9 @@
   font-size: 14px;
   letter-spacing: 1.3px;
   line-height: 24px;
-  color: #cccccc;
+  color: @blog-date-color;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: @firaSan-font;
   width: 100%;
   text-transform: uppercase;
 }
@@ -102,7 +105,7 @@
   line-height: 32px;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: "Cormorant Garamond", serif;
+  font-family: @cormorantGaramond-font;
   height: auto;
   margin-top: 20px;
   color: @black-color;
@@ -110,18 +113,19 @@
   &:hover {
     text-decoration: none;
     cursor: @mouse-over;
+    color: @black-color;
   }
 }
 
 .interactive {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 75px;
   span {
     font-size: 15px;
     line-height: 32px;
     color: @span-color;
     font-weight: 400;
-    font-family: "Fira Sans", sans-serif;
+    font-family: @firaSan-font;
     margin-right: 25px;
   }
 
@@ -135,7 +139,7 @@
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
-  font-family: "Cormorant Garamond", serif;
+  font-family: @cormorantGaramond-font;
   text-align: center;
   &:hover {
     cursor: @mouse-over;

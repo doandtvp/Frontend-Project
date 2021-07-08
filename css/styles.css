@@ -1,9 +1,18 @@
+.custom-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.banner-custom {
+  max-width: 100%;
+  width: 48%;
+}
 body {
   width: 100%;
 }
 a {
   text-decoration: none;
-  color: white;
+  color: #fff;
 }
 a:hover {
   text-decoration: none;
@@ -21,7 +30,7 @@ header {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background: url(http://127.0.0.1:5500/DE_3/images/header/header-model.png) no-repeat;
+  background: url("../images/header/header-model.png") no-repeat;
   background-position: 95%;
   box-sizing: border-box;
   padding: 0 15px;
@@ -79,7 +88,7 @@ header {
   line-height: 32px;
   color: #696969;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   height: 18%;
   margin-top: 261px;
 }
@@ -95,7 +104,7 @@ header {
   color: #333;
   font-weight: 600;
   font-style: italic;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   text-transform: uppercase;
 }
 .header-title__social-media {
@@ -119,7 +128,7 @@ header {
   line-height: 40px;
   color: #eae6d3;
   font-weight: 500;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   text-decoration: none;
 }
 .header-title__social-media ul li a:hover {
@@ -145,7 +154,7 @@ header {
   line-height: 47px;
   color: #fff;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   text-transform: uppercase;
   text-indent: 28px;
 }
@@ -168,7 +177,7 @@ header {
 .header__sidebar {
   width: 41%;
   height: 100%;
-  background-color: lightcoral;
+  background-color: #f08080;
   border-radius: 8px 0 0 8px;
   position: absolute;
   right: -41%;
@@ -202,15 +211,15 @@ header {
 .header__sidebar-content ul li {
   height: 40px;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   line-height: 40px;
   font-size: 14px;
   background-color: #fff;
-  border-bottom: 1px solid lightcoral;
+  border-bottom: 1px solid #f08080;
 }
 .header__sidebar-content ul li:hover {
   font-size: 16px;
-  background-color: lightcoral;
+  background-color: #f08080;
   border: 1px solid #fff;
   border-radius: 4px;
 }
@@ -219,7 +228,7 @@ header {
   color: #fff;
 }
 .header__sidebar-content ul li a {
-  color: black;
+  color: #333;
 }
 .header_menu {
   display: none;
@@ -255,7 +264,7 @@ header {
   line-height: 30px;
   color: #333;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   margin: 0;
 }
 .contact__items span {
@@ -263,7 +272,7 @@ header {
   line-height: 28px;
   color: #ababab;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
 }
 .banner {
   width: 100%;
@@ -293,7 +302,7 @@ header {
   line-height: 48px;
   color: #333;
   font-weight: 600;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
 }
 .banner__content {
   width: 100%;
@@ -323,8 +332,10 @@ header {
   position: relative;
 }
 .banner__content-tl {
-  background: url("../images/banner/tl_ring.png") 51% 55% no-repeat, url("../images/banner/tl_g.png") 50% 118% no-repeat;
-  border: 1px solid #efefef;
+  background: url("../images/banner/tl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__label {
   position: absolute;
@@ -338,7 +349,7 @@ header {
   line-height: 36px;
   color: #333;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", "sans-serif";
   text-align: center;
   margin: 0 -1px 12px 0;
 }
@@ -348,14 +359,20 @@ header {
   line-height: 36px;
   color: #d6ba8d;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", "serif";
   text-align: center;
 }
 .banner__content-tc {
-  background: url("../images/banner/tc_girl.png") 43% 39% no-repeat;
+  background: url("../images/banner/tc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__content-tr {
-  background: url("../images/banner/tr_line.png") 51% 50% no-repeat, url("../images/banner/tr_ring.png") 29% 88% no-repeat, url("../images/banner/gray_bg.png") no-repeat;
+  background: url("../images/banner/tr.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__label-right {
   position: absolute;
@@ -371,7 +388,7 @@ header {
   line-height: 24px;
   color: #333;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", "sans-serif";
   text-transform: uppercase;
   margin: 13px 0 30px 0;
 }
@@ -380,18 +397,26 @@ header {
   line-height: 47px;
   color: #d6ba8d;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", "serif";
   letter-spacing: 1.9px;
 }
 .banner__content-bl {
-  background: url("../images/banner/bl_girl_2.png") right bottom no-repeat, url("../images/banner/bl_text.png") center no-repeat, url("../images/banner/bl_bg.png") no-repeat;
+  background: url("../images/banner/bl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__content-bc {
-  background: url("../images/banner/bc_neck.png") 55% 39.5% no-repeat, url("../images/banner/bc_r.png") 65% 117% no-repeat;
-  border: 1px solid #efefef;
+  background: url("../images/banner/bc.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__content-br {
-  background: url("../images/banner/br_p.png") 29% 92% no-repeat, url("../images/banner/br_ring.png") 81% 84% no-repeat, url("../images/banner/gray_bg.png") 43% 39% repeat;
+  background: url("../images/banner/br.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .banner__label-br {
   position: absolute;
@@ -407,7 +432,7 @@ header {
   line-height: 56px;
   color: #333;
   font-weight: 700;
-  font-family: "Cormorant Garamond";
+  font-family: "Cormorant Garamond", "serif";
   margin: 0;
 }
 .banner__label-br-price {
@@ -416,7 +441,7 @@ header {
   line-height: 24px;
   color: #696969;
   font-weight: 400;
-  font-family: "Fira Sans";
+  font-family: "Fira Sans", "sans-serif";
 }
 .banner__content div:hover {
   cursor: pointer;
@@ -441,7 +466,7 @@ header {
   line-height: 24px;
   color: #333;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   text-align: center;
   margin-top: 39px;
   padding-left: 2.5px;
@@ -452,7 +477,7 @@ header {
   line-height: 24px;
   color: #333;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   text-align: center;
   margin-top: 51px;
 }
@@ -463,7 +488,7 @@ header {
   line-height: 24px;
   color: #696969;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   text-align: center;
   margin-top: 64px;
 }
@@ -475,13 +500,14 @@ header {
   line-height: 24px;
   color: #696969;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   text-align: center;
   margin-top: 61px;
   padding-left: 1px;
 }
 .products {
   width: 100%;
+  margin-top: 120px;
 }
 .products__container {
   max-width: 1200px;
@@ -518,7 +544,7 @@ header {
   line-height: 28px;
   color: #333;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
 }
 .products__container-title span {
   font-size: 14px;
@@ -526,7 +552,7 @@ header {
   line-height: 61px;
   color: #333;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   text-transform: uppercase;
   margin-right: 13px;
 }
@@ -557,6 +583,9 @@ header {
   position: relative;
   width: 100%;
   height: 90%;
+  background: url("../images/products/product_bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .products__content-items-image:hover {
   cursor: pointer;
@@ -565,6 +594,10 @@ header {
 .products__content-items-image:hover .carousel-control-next,
 .products__content-items-image:hover .image-hover {
   display: block;
+}
+.poducts__images {
+  display: block;
+  margin: 0 auto;
 }
 .carousel {
   width: 100%;
@@ -578,30 +611,6 @@ header {
 .carousel-control-prev,
 .carousel-control-next {
   display: none;
-}
-.t-ring {
-  margin-top: 84px;
-}
-.t-neck {
-  object-position: -6px;
-}
-.t-ring-2 {
-  object-position: -120px 11px;
-}
-.t-ring-3 {
-  object-position: 0 62px;
-}
-.b-ring {
-  margin-top: 92px;
-}
-.b-ring-2 {
-  object-position: 5px 30px;
-}
-.b-neck {
-  object-position: -39px -74px;
-}
-.eardrop {
-  object-position: 10px 46px;
 }
 .image-hover {
   position: absolute;
@@ -633,6 +642,9 @@ header {
   line-height: 2.5em;
   margin-right: 0.5px;
 }
+.image-hover__shopping-add a:hover {
+  color: #fff;
+}
 .image-hover__shopping-action {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -640,6 +652,9 @@ header {
   display: flex;
   width: 50%;
   line-height: 2.2em;
+}
+.image-hover__shopping-action a:hover {
+  color: #fff;
 }
 .image-hover__action {
   box-sizing: border-box;
@@ -661,7 +676,7 @@ header {
   letter-spacing: 1px;
   color: #333;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   margin: 0;
 }
 .products__content-items-price span {
@@ -669,7 +684,7 @@ header {
   letter-spacing: 1px;
   color: #d6ba8d;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
 }
 .blog {
   width: 100%;
@@ -721,7 +736,10 @@ header {
   cursor: pointer;
 }
 .blog-1 {
-  background: url("../images/blog/blog_1.png") 50% 40% no-repeat;
+  background: url("../images/blog/blog_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
@@ -729,7 +747,10 @@ header {
   cursor: pointer;
 }
 .blog-2 {
-  background: url("../images/blog/blog_2.png") 50% 60% no-repeat;
+  background: url("../images/blog/blog_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
@@ -737,7 +758,10 @@ header {
   cursor: pointer;
 }
 .blog-3 {
-  background: url("../images/blog/blog_3.png") 10% 0% no-repeat;
+  background: url("../images/blog/blog_3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100%;
 }
@@ -749,11 +773,11 @@ header {
   line-height: 28px;
   color: #333;
   font-weight: 700;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   position: absolute;
-  top: -5px;
-  right: 34%;
-  left: 34%;
+  top: -7px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .blog__content-labels {
   box-sizing: border-box;
@@ -763,9 +787,9 @@ header {
   font-size: 14px;
   letter-spacing: 1.3px;
   line-height: 24px;
-  color: #cccccc;
+  color: #ccc;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   width: 100%;
   text-transform: uppercase;
 }
@@ -776,7 +800,7 @@ header {
   line-height: 32px;
   font-weight: 700;
   text-transform: capitalize;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   height: auto;
   margin-top: 20px;
   color: #333;
@@ -784,17 +808,18 @@ header {
 .title:hover {
   text-decoration: none;
   cursor: pointer;
+  color: #333;
 }
 .interactive {
   width: 100%;
-  margin-top: 60px;
+  margin-top: 75px;
 }
 .interactive span {
   font-size: 15px;
   line-height: 32px;
   color: #696969;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   margin-right: 25px;
 }
 .interactive i {
@@ -805,7 +830,7 @@ header {
   font-size: 24px;
   line-height: 28px;
   font-weight: 400;
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "serif";
   text-align: center;
 }
 .blog__content-button:hover {
@@ -875,11 +900,11 @@ footer {
   width: 100%;
   height: 420px;
   background-color: #333;
-  margin-top: 62px;
+  margin-top: 60px;
   position: relative;
 }
 .footer__content {
-  max-width: 1170px;
+  max-width: 1200px;
   width: 100%;
   box-sizing: border-box;
   padding: 55px 15px 90px 15px;
@@ -939,21 +964,25 @@ footer {
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 24px;
-  color: #ababab;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   text-transform: uppercase;
   margin: 92px 17px 0 19px;
 }
-.footer__content-top-menu ul li:hover {
+.footer__content-top-menu ul li a {
+  color: #ababab;
+}
+.footer__content-top-menu ul li a:hover {
   color: #d6ba8d;
   cursor: pointer;
 }
 .footer__content-top-sub {
   width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
 }
 .footer__content-top-sub__content {
-  float: right;
   width: 68%;
   height: 20.5%;
   text-align: center;
@@ -979,7 +1008,7 @@ footer {
   line-height: 24px;
   color: #ababab;
   font-weight: 700;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
 }
 .footer__content-top-sub__content i {
   margin-left: 7px;
@@ -1000,7 +1029,7 @@ footer {
 .footer__content-bottom-address p {
   line-height: 25px;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   margin: 22px 0 4px 0;
 }
 .footer__content-bottom-social-media ul {
@@ -1094,16 +1123,19 @@ footer {
 .footer__sidebar-content ul li {
   height: 40px;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "sans-serif";
   line-height: 40px;
   font-size: 14px;
+}
+.footer__sidebar-content ul li a {
   color: #ababab;
 }
-.footer__sidebar-content ul li:hover {
+.footer__sidebar-content ul li a:hover {
   font-size: 18px;
   border-radius: 4px;
   color: #d6ba8d;
   text-decoration: underline;
+  cursor: pointer;
 }
 .footer_menu {
   position: absolute;
@@ -1143,7 +1175,6 @@ footer {
     width: 100%;
   }
   .contact__container {
-    max-width: 800px;
     width: 100%;
     margin: 0 auto;
   }
@@ -1157,7 +1188,8 @@ footer {
     width: 100%;
   }
   .banner__content {
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
   }
   .banner__title span {
     font-size: 30.5px;
@@ -1165,7 +1197,8 @@ footer {
   .banner__content-tl,
   .banner__content-tr {
     order: 0;
-    width: 50%;
+    max-width: 100%;
+    width: 48%;
   }
   .banner__label-right-title_2 {
     font-size: 7vw;
@@ -1173,59 +1206,59 @@ footer {
   .banner__content-tc {
     order: 1;
     width: 100%;
+    max-width: 100%;
   }
   .banner__content-bl,
   .banner__content-bc {
     order: 2;
-    width: 50%;
+    max-width: 100%;
+    width: 48%;
   }
   .banner__content-br {
     order: 3;
     width: 100%;
+    max-width: 100%;
   }
   .products {
     width: 100%;
     margin-bottom: 100px;
   }
   .products__container {
-    max-width: 800px;
     width: 100%;
-  }
-  .products__content-items {
-    width: calc(100% * 6 / 12);
   }
   .products__container-title p {
     font-size: 40px;
     text-indent: 20px;
   }
-  .b-neck {
-    object-position: 0px -75px;
+  .products__content-items {
+    width: calc(100% * 6 / 12);
   }
   .blog {
     width: 100%;
   }
   .blog__container {
-    max-width: 800px;
     width: 100%;
   }
   .blog__title span {
     font-size: 5vw;
   }
   .blog__content {
-    max-width: 800px;
     width: 100%;
   }
   .blog__content-items {
     justify-content: end;
   }
   .blog__content-items-boxs {
-    width: calc(100% * 6 / 12);
+    width: calc(100% * 4 / 12);
+  }
+  .blog__content-labels {
+    padding: 10px;
+  }
+  .interactive span {
+    font-size: 12px;
   }
   .brand {
     width: 100%;
-  }
-  .brand__container {
-    max-width: 800px;
   }
   .brand__items {
     width: calc(100% * 4 / 12);
@@ -1236,10 +1269,9 @@ footer {
   }
   .footer__content {
     height: auto;
-    max-width: 800px;
     width: 100%;
     box-sizing: border-box;
-    padding: 20px 0;
+    padding: 55px 15px;
   }
   .footer__content-top-logo,
   .footer__content-top-menu,
@@ -1260,7 +1292,7 @@ footer {
   }
   .footer__content-top-menu ul {
     height: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .footer__content-top-menu ul li {
     margin: 0;
@@ -1276,20 +1308,34 @@ footer {
   .footer__content-bottom-address {
     width: 100%;
     text-align: center;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
   }
   .footer__content-bottom-social-media {
     width: 100%;
-    margin: 40px 0;
+    margin: 30px 0;
   }
   .footer__content-bottom-social-media ul {
     padding: 0;
     justify-content: center;
   }
 }
+@media all and (max-width: 768px) {
+  .blog__content-items-boxs {
+    width: calc(100% * 12 / 12);
+  }
+  .blog__content-images {
+    height: 65%;
+  }
+}
 @media all and (max-width: 800px) {
   .header__container {
     width: 100%;
     margin: 0 auto;
+    background-position: center;
   }
   .header-title__first-line {
     font-size: 20px;
@@ -1302,7 +1348,6 @@ footer {
     font-size: 20px;
   }
   .contact__container {
-    max-width: 768px;
     width: 100%;
     margin: 0 auto;
   }
@@ -1340,33 +1385,13 @@ footer {
     width: 100%;
   }
   .products__container {
-    max-width: 768px;
     width: 100%;
   }
-  .b-neck {
-    object-position: -40px -74px;
+  .title {
+    font-size: 18px;
   }
-  .t-ring-2 {
-    object-position: -120px 11px;
-  }
-  .blog {
-    width: 100%;
-  }
-  .blog__content {
-    max-width: 768px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .blog__content-items-boxs {
-    width: calc(100% * 12 / 12);
-  }
-  .blog-1,
-  .blog-3 {
-    background-size: cover;
-  }
-  .blog-2 {
-    background: url(../images/blog/blog_2.png) 50% 30% no-repeat;
-    background-size: cover;
+  .interactive span {
+    font-size: 10px;
   }
   .banner {
     width: 100%;
@@ -1375,15 +1400,11 @@ footer {
     width: 100%;
   }
   .brand__container {
-    max-width: 768px;
     width: 100%;
   }
   footer {
     width: 100%;
     height: auto;
-  }
-  .footer__content {
-    max-width: 768px;
   }
 }
 @media all and (max-width: 600px) {
@@ -1408,12 +1429,8 @@ footer {
     font-size: 18px;
   }
   .contact__container {
-    max-width: 510px;
     width: 100%;
     margin: 0 auto;
-  }
-  .banner__content-br {
-    background: url(http://127.0.0.1:5500/DE_3/images/banner/br_ring.png) 100% 84% no-repeat, url(http://127.0.0.1:5500/DE_3/images/banner/gray_bg.png) center repeat;
   }
   .banner {
     width: 100%;
@@ -1421,26 +1438,14 @@ footer {
   .banner__content {
     justify-content: space-between;
   }
-  .banner__content-tl,
-  .banner__content-tr {
-    -webkit-box-ordinal-group: 0;
-    -moz-box-ordinal-group: 0;
-    -ms-flex-order: 0;
-    -webkit-order: 0;
-    order: 0;
-    width: 49%;
-  }
   .banner__label-right-title_2 {
-    font-size: 7vw;
+    font-size: 8vw;
   }
-  .banner__content-bl,
-  .banner__content-bc {
-    -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -ms-flex-order: 2;
-    -webkit-order: 2;
-    order: 2;
-    width: 49%;
+  .banner__content-br {
+    background-position: 70%;
+  }
+  .banner__label-br {
+    top: 90px;
   }
   .banner__title span {
     font-size: 23px;
@@ -1451,53 +1456,12 @@ footer {
   .products__container {
     width: 100%;
   }
-  .products__container-content .row {
-    width: 100%;
-  }
-  .b-neck {
-    object-position: -40px -74px;
-  }
-  .t-ring-2 {
-    object-position: -120px 11px;
-  }
-  .blog {
-    width: 100%;
-  }
   .blog__title span {
     font-size: 6vw;
-  }
-  .blog__content {
-    max-width: 510px;
-    width: 100%;
-    margin: 0 auto;
-  }
-  .blog__content-items-boxs {
-    width: calc(100% * 12 / 12);
-  }
-  .blog-1,
-  .blog-3 {
-    background-size: cover;
-  }
-  .blog-2 {
-    background: url(../images/blog/blog_2.png) 50% 30% no-repeat;
-    background-size: cover;
-  }
-  .banner {
-    width: 100%;
-  }
-  .brand {
-    width: 100%;
-  }
-  .brand__container {
-    max-width: 510px;
-    width: 100%;
   }
   footer {
     width: 100%;
     height: auto;
-  }
-  .footer__content {
-    max-width: 510px;
   }
 }
 @media all and (max-width: 480px) {
@@ -1557,19 +1521,24 @@ footer {
     width: 100%;
   }
   .banner__content-br {
-    background: url(http://127.0.0.1:5500/DE_3/images/banner/br_ring.png) 81% 84% no-repeat, url(http://127.0.0.1:5500/DE_3/images/banner/gray_bg.png) 43% 39% repeat;
-    background-size: 100%;
+    background-position: 70% 30%;
+    background-size: 200%;
+  }
+  .banner__label-br-title {
+    width: 260px;
   }
   .banner__label-br {
     width: 100%;
     top: 35px;
     left: 10px;
   }
+  .banner__label-right-title_2 {
+    font-size: 14vw;
+  }
   .row {
     width: 100%;
   }
   .products__container {
-    max-width: 350px;
     width: 100%;
     margin: 0 auto;
   }
@@ -1587,23 +1556,21 @@ footer {
     font-size: 10px;
     margin: 0;
   }
-  .b-neck {
-    object-position: 0px -74px;
-  }
-  .t-ring-2 {
-    object-position: -85px -20px;
-  }
-  .blog {
-    width: 100%;
-  }
-  .blog__content {
-    width: 100%;
+  .blog__content-items-boxs {
+    padding: 0;
   }
   .blog__content-items {
     justify-content: center;
   }
+  .blog__content-images {
+    height: 45%;
+  }
+  .blog-1,
+  .blog-2,
+  .blog-3 {
+    background-size: contain;
+  }
   .brand__container {
-    max-width: 350px;
     width: 100%;
     justify-content: center;
   }
@@ -1612,6 +1579,9 @@ footer {
   }
   .brand__content .row {
     width: auto;
+  }
+  .pandora {
+    margin: 0 0 0 20px;
   }
   .footer {
     width: 100%;
@@ -1666,7 +1636,6 @@ footer {
     width: 100%;
   }
   .contact__container {
-    max-width: 310px;
     width: 100%;
   }
   .contact__items p {
@@ -1691,9 +1660,6 @@ footer {
   .banner__label-right-title_1 {
     font-size: 10px;
   }
-  .banner__label-right-title_2 {
-    font-size: 14vw;
-  }
   .banner__label-br-title {
     width: 260px;
     font-size: 40px;
@@ -1708,6 +1674,7 @@ footer {
   .sale-box {
     width: 260px;
     top: 25%;
+    right: 2%;
   }
   .banner__label-br {
     width: 100%;
@@ -1717,24 +1684,17 @@ footer {
   .products {
     width: 100%;
   }
-  .products__container {
-    max-width: 310px;
-  }
   .products__container-title p {
     font-size: 25px;
   }
   .products__container-title span {
     font-size: 8px;
   }
-  .blog {
-    width: 100%;
+  .blog__title {
+    margin-bottom: 0;
   }
   .blog__title span {
     font-size: 7vw;
-  }
-  .blog__content {
-    max-width: 310px;
-    width: 100%;
   }
   .date {
     font-size: 12px;
@@ -1744,19 +1704,6 @@ footer {
   }
   .interactive span {
     font-size: 10px;
-  }
-  .brand {
-    width: 100%;
-  }
-  .brand__container {
-    max-width: 310px;
-    width: 100%;
-  }
-  .footer {
-    width: 100%;
-  }
-  .footer__content {
-    width: 100%;
   }
   .footer__content-bottom {
     margin-top: 30px;

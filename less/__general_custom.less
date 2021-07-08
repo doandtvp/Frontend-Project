@@ -1,0 +1,55 @@
+@position-re: relative;
+@position-ab: absolute;
+@white-color: #fff;
+@black-color: #333;
+@span-color: #696969;
+@gold-color: #d6ba8d;
+@banner-boder: #efefef;
+@fc-span-color: #ababab;
+@header-sidebar-color: rgb(240, 128, 128);
+@rgb-gray: #eae6d3;
+@blog-bg-color: #faf9f9;
+@blog-date-color: #ccc;
+
+@firaSan-font: "Fira Sans", "sans-serif";
+@cormorantGaramond-font: "Cormorant Garamond", "serif";
+
+@mouse-over: pointer;
+
+.custom-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-custom {
+  max-width: 100%;
+  width: 48%;
+}
+
+.flex-display(@display:flex) {
+  display: ~"-webkit-@{display}";
+  display: ~"-ms-@{display}box";
+  display: ~"-ms-@{display}";
+  display: @display;
+}
+
+.flex-order(@val) {
+  -webkit-box-ordinal-group: @val;
+  -moz-box-ordinal-group: @val;
+  -ms-flex-order: @val;
+  -webkit-order: @val;
+  order: @val;
+}
+
+body {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: @white-color;
+  &:hover {
+    text-decoration: none;
+  }
+}
