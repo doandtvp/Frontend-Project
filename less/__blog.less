@@ -84,7 +84,7 @@
 
 .blog__content-labels {
   box-sizing: border-box;
-  padding: 28px 30px;
+  padding: 28px 50px 28px 33px;
 }
 
 .date {
@@ -96,18 +96,17 @@
   font-family: @firaSan-font;
   width: 100%;
   text-transform: uppercase;
+  margin: -3px 0 18px 0;
 }
 
 .title {
   width: 100%;
-  font-size: 22.5px;
+  font-size: 24px;
   letter-spacing: 1px;
   line-height: 32px;
   font-weight: 700;
-  text-transform: capitalize;
   font-family: @cormorantGaramond-font;
   height: auto;
-  margin-top: 20px;
   color: @black-color;
 
   &:hover {
@@ -119,19 +118,27 @@
 
 .interactive {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 62px;
   span {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 32px;
     color: @span-color;
     font-weight: 400;
     font-family: @firaSan-font;
-    margin-right: 25px;
-  }
+    margin-right: 17px;
 
-  i {
-    margin: 5px;
+    i {
+      font-size: 17px;
+    }
   }
+}
+
+.fa-eye {
+  margin-right: 7px;
+}
+
+.fa-share-alt {
+  margin-right: 14px;
 }
 
 .blog__content-button {

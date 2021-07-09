@@ -298,11 +298,12 @@ header {
   text-align: center;
 }
 .banner__title span {
-  font-size: 33.5px;
+  font-size: 34px;
   line-height: 48px;
   color: #333;
   font-weight: 600;
   font-family: "Cormorant Garamond", "serif";
+  letter-spacing: 0px;
 }
 .banner__content {
   width: 100%;
@@ -781,7 +782,7 @@ header {
 }
 .blog__content-labels {
   box-sizing: border-box;
-  padding: 28px 30px;
+  padding: 28px 50px 28px 33px;
 }
 .date {
   font-size: 14px;
@@ -792,17 +793,16 @@ header {
   font-family: "Fira Sans", "sans-serif";
   width: 100%;
   text-transform: uppercase;
+  margin: -3px 0 18px 0;
 }
 .title {
   width: 100%;
-  font-size: 22.5px;
+  font-size: 24px;
   letter-spacing: 1px;
   line-height: 32px;
   font-weight: 700;
-  text-transform: capitalize;
   font-family: "Cormorant Garamond", "serif";
   height: auto;
-  margin-top: 20px;
   color: #333;
 }
 .title:hover {
@@ -812,18 +812,24 @@ header {
 }
 .interactive {
   width: 100%;
-  margin-top: 75px;
+  margin-top: 62px;
 }
 .interactive span {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 32px;
   color: #696969;
   font-weight: 400;
   font-family: "Fira Sans", "sans-serif";
-  margin-right: 25px;
+  margin-right: 17px;
 }
-.interactive i {
-  margin: 5px;
+.interactive span i {
+  font-size: 17px;
+}
+.fa-eye {
+  margin-right: 7px;
+}
+.fa-share-alt {
+  margin-right: 14px;
 }
 .blog__content-button {
   margin-top: 38px;
@@ -1178,12 +1184,6 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
-  .contact__items p {
-    font-size: 12px;
-  }
-  .contact__items span {
-    font-size: 10px;
-  }
   .banner {
     width: 100%;
   }
@@ -1253,9 +1253,6 @@ footer {
   }
   .blog__content-labels {
     padding: 10px;
-  }
-  .interactive span {
-    font-size: 12px;
   }
   .brand {
     width: 100%;
@@ -1351,6 +1348,12 @@ footer {
     width: 100%;
     margin: 0 auto;
   }
+  .contact__items p {
+    font-size: 16px;
+  }
+  .contact__items span {
+    font-size: 14px;
+  }
   .banner {
     width: 100%;
   }
@@ -1386,12 +1389,6 @@ footer {
   }
   .products__container {
     width: 100%;
-  }
-  .title {
-    font-size: 18px;
-  }
-  .interactive span {
-    font-size: 10px;
   }
   .banner {
     width: 100%;
@@ -1457,7 +1454,7 @@ footer {
     width: 100%;
   }
   .blog__title span {
-    font-size: 6vw;
+    font-size: 9vw;
   }
   footer {
     width: 100%;
@@ -1507,6 +1504,12 @@ footer {
     width: 100%;
     border-radius: 0;
     height: 700px;
+  }
+  .contact__items p {
+    font-size: 16px;
+  }
+  .contact__items span {
+    font-size: 14px;
   }
   .banner__title span {
     font-size: 18px;
@@ -1568,7 +1571,7 @@ footer {
   .blog-1,
   .blog-2,
   .blog-3 {
-    background-size: contain;
+    background-size: cover;
   }
   .brand__container {
     width: 100%;
@@ -1638,11 +1641,8 @@ footer {
   .contact__container {
     width: 100%;
   }
-  .contact__items p {
-    font-size: 12px;
-  }
   .contact__items span {
-    font-size: 8px;
+    font-size: 10px;
   }
   .banner {
     width: 100%;
@@ -1688,22 +1688,18 @@ footer {
     font-size: 25px;
   }
   .products__container-title span {
-    font-size: 8px;
+    font-size: 9px;
   }
   .blog__title {
     margin-bottom: 0;
   }
   .blog__title span {
-    font-size: 7vw;
+    font-size: 9vw;
   }
-  .date {
-    font-size: 12px;
-  }
-  .title {
-    font-size: 20px;
-  }
-  .interactive span {
-    font-size: 10px;
+  .blog-1,
+  .blog-2,
+  .blog-3 {
+    background-size: contain;
   }
   .footer__content-bottom {
     margin-top: 30px;
